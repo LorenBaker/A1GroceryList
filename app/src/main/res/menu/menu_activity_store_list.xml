@@ -1,0 +1,62 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".StoreListActivity">
+
+
+    <!--Shown in Shopping Lists and Store Lists-->
+    <item
+        android:id="@+id/action_deselect_struck_out_items"
+        android:title="Deselect struck out items"
+        android:icon="@drawable/ic_action_cancel"
+        android:orderInCategory="100"
+        android:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_add_items"
+        android:title="Add items"
+        android:icon="@drawable/ic_action_new"
+        android:orderInCategory="101"
+        android:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_deselect_all_items"
+        android:title="Deselect all items"
+        android:orderInCategory="111"
+        android:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_new_store"
+        android:title="New Store"
+        android:orderInCategory="200"
+        android:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_edit_store"
+        android:title="Edit Store"
+        android:orderInCategory="210"
+        android:showAsAction="never" />
+
+
+    <!--Shown in all menus-->
+
+    <item
+        android:id="@+id/action_settings"
+        android:title="@string/action_settings"
+        android:orderInCategory="1010"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_about"
+        android:title="About"
+        android:orderInCategory="1020"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_log_out"
+        android:title="Logout"
+        android:orderInCategory="1030"
+        app:showAsAction="never" />
+
+
+</menu>

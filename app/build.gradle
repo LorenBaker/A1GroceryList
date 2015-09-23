@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.lbconsulting.a1grocerylist"
+        minSdkVersion 16
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    /*compile 'com.android.support:appcompat-v7:22.2.1'*/
+    compile files('libs/eventbus-2.4.0.jar')
+
+    compile 'me.dm7.barcodescanner:zxing:1.7.2'
+    compile 'com.android.support:support-v13:+'
+    compile 'com.google.android.gms:play-services:7.5.0'
+    compile project(':ParseLoginUI')
+}

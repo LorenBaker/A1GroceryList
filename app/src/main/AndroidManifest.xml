@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lbconsulting.a1grocerylist">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!--android:icon="@mipmap/ic_launcher"-->
+
+    <application
+        android:name=".activities.A1GroceryListApplication"
+        android:allowBackup="true"
+
+        android:icon="@drawable/a1_grocery_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".activities.DispatchActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".activities.StoreListActivity"
+            android:label="@string/app_name">
+
+        </activity>
+
+        <activity
+            android:name="com.parse.ui.ParseLoginActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop">
+
+            <!-- We reference a drawable resource here, so we must use android:resource -->
+            <todo>Set A1GroceryList logo</todo>
+<!--            <meta-data
+                android:name="com.parse.ui.ParseLoginActivity.APP_LOGO"
+                android:resource="@drawable/my_app_logo" />-->
+
+            <!-- For these non-resource options, use android:value -->
+            <meta-data
+                android:name="com.parse.ui.ParseLoginActivity.PARSE_LOGIN_ENABLED"
+                android:value="true" />
+            <meta-data
+                android:name="com.parse.ui.ParseLoginActivity.PARSE_LOGIN_EMAIL_AS_USERNAME"
+                android:value="true" />
+            <!--            <meta-data
+                            android:name="com.parse.ui.ParseLoginActivity.PARSE_LOGIN_HELP_TEXT"
+                            android:value="@string/password_reset_text"/>-->
+            <meta-data
+                android:name="com.parse.ui.ParseLoginActivity.MIN_PASSWORD_LENGTH"
+                android:value="8" />
+
+        </activity>
+
+
+        <service
+            android:name=".services.UploadToParseService"
+            android:exported="false"/>
+
+        <service
+            android:name=".services.SyncParseIntentService"
+            android:exported="false"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/view_vertical_margin"
+            android:layout_marginBottom="@dimen/view_vertical_margin">
+
+
+            <Spinner
+                android:id="@+id/spnStoreChains"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/txtStoreRegionalName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:hint="Store Regional Name" />
+
+            <Button
+                android:id="@+id/btnGetGeoPoint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Get Lat and Lng From Address" />
+
+            <EditText
+                android:id="@+id/txtAddress1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Number and Street" />
+
+            <EditText
+                android:id="@+id/txtAddress2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Address 2"
+                android:visibility="gone"/>
+
+            <RelativeLayout
+                android:id="@+id/progressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:id="@+id/progressBarCircle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:paddingLeft="35dp"
+                    android:paddingRight="10dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/progressBarCircle"
+                    android:layout_centerVertical="true"
+                    android:textSize="20sp"
+                    android:text="Saving new store ... "/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/llCityState"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/txtCity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="City" />
+
+                <EditText
+                    android:id="@+id/txtState"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="State" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/txtZip"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Zip" />
+
+                <EditText
+                    android:id="@+id/txtCountry"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+
+                    android:hint="Country" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/txtLatitude"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Latitude" />
+
+                <EditText
+                    android:id="@+id/txtLongitude"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="Longitude" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnGetDeviceLocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:text="Address From Current Location" />
+
+
+            <EditText
+                android:id="@+id/txtWebsiteURL"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Website URL" />
+
+            <EditText
+                android:id="@+id/txtPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phone Number" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

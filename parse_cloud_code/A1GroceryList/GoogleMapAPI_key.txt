@@ -1,0 +1,24 @@
+Key for server applications
+
+API key	
+AIzaSyAebBA9NuwNy3K_aUEdVl3XoFArrc4vDs0
+IPs	
+Any IP allowed
+Activation date	
+Jul 20, 2015, 12:44:10 PM
+Activated by	
+dadodmail@gmail.com (you)
+
+https://maps.googleapis.com/maps/api/geocode/output?parameters
+
+https://maps.googleapis.com/maps/api/geocode/json?address=15100 SE 38TH ST,STE 103,BELLEVUE,WA,98006-1763,USA:ES&key=AIzaSyAebBA9NuwNy3K_aUEdVl3XoFArrc4vDs0
+
+
+https://maps.googleapis.com/maps/api/geocode/json?
+15100 SE 38TH ST,STE 103,BELLEVUE,WA,98006-1763,USA:ES&key=AIzaSyAebBA9NuwNy3K_aUEdVl3XoFArrc4vDs0
+
+14216 SE 51st ST, Bellevue, WA 98006
+17991 REDMOND WAY,REDMOND,WA, 98052-4907,USA
+15100 SE 38TH ST,STE 103,BELLEVUE,WA,98006-1763,USA
+
+47.666112, -122.1012285

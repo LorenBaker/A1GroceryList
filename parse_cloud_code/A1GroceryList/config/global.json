@@ -1,0 +1,14 @@
+{
+  "global": {
+    "parseVersion": "1.5.0"
+  },
+  "applications": {
+    "AGroceryList": {
+      "applicationId": "Z1uTyZFcvSsV74AdrqbfWPe44WhqtTvwmJupITew",
+      "masterKey": "rxkkOeTFIAu0JR5CrTmgdUprQmzyWqv4TPrFM91X"
+    },
+    "_default": {
+      "link": "AGroceryList"
+    }
+  }
+}

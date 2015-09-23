@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/Loren/OneDrive/Android_Studio_Projects/A1GroceryList/app/libraries/core/src/main/res/values-hdpi/strings.xml -->
+    <eat-comment/>
+    <integer name="viewfinder_border_length">60</integer>
+    <integer name="viewfinder_border_width">4</integer>
+</resources>

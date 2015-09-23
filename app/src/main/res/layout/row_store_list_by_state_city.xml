@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/rec_genoa_no_stroke">
+
+    <include layout="@layout/row_items_separator" />
+
+    <CheckBox
+        android:id="@+id/ckBoxStoreName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/StoreListRowBold"
+        android:text="Chain RegionalName" />
+
+    <TextView
+        android:id="@+id/tvStoreAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="45dp"
+        android:paddingTop="0dp"
+        style="@style/StoreAddress"
+        android:text="999 128th Ave NE\nBellevue, WA 98006-8765" />
+
+</LinearLayout>

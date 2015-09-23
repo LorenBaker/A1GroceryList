@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ScannerFragmentActivity">
+
+    <item
+        android:id="@+id/menu_flash"
+        android:title="Flash [OFF]"
+        android:icon="@drawable/ic_action_flash_off"
+        android:orderInCategory="50"
+        android:showAsAction="ifRoom"/>
+
+</menu>

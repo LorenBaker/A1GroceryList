@@ -1,0 +1,506 @@
+{ "results": [
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:37.951Z",
+        "groupName": "[No Group]",
+        "objectId": "oNnVLD0C7N",
+        "sortKey": 1,
+        "updatedAt": "2015-07-24T03:42:37.951Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:38.100Z",
+        "groupName": "Baby Care",
+        "objectId": "6x7MLj2W4W",
+        "sortKey": 2,
+        "updatedAt": "2015-07-24T03:42:38.100Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:38.268Z",
+        "groupName": "Bakery",
+        "objectId": "sirBg1FHxe",
+        "sortKey": 3,
+        "updatedAt": "2015-07-24T03:42:38.268Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:38.457Z",
+        "groupName": "Baking Goods",
+        "objectId": "GkxWyAsacW",
+        "sortKey": 4,
+        "updatedAt": "2015-07-24T03:42:38.457Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:38.683Z",
+        "groupName": "Beer",
+        "objectId": "tTJfojcz7P",
+        "sortKey": 5,
+        "updatedAt": "2015-07-24T03:42:38.683Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:39.054Z",
+        "groupName": "Beverages",
+        "objectId": "PD1CX3JLJk",
+        "sortKey": 6,
+        "updatedAt": "2015-07-24T03:42:39.054Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:39.230Z",
+        "groupName": "Breads",
+        "objectId": "BYOd3JuWBk",
+        "sortKey": 7,
+        "updatedAt": "2015-07-24T03:42:39.230Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:39.371Z",
+        "groupName": "Breakfast \u0026 Cereal",
+        "objectId": "NP44sIJeRs",
+        "sortKey": 8,
+        "updatedAt": "2015-07-24T03:42:39.371Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:39.623Z",
+        "groupName": "Canned Goods \u0026 Soups",
+        "objectId": "0mtIBQrbyx",
+        "sortKey": 9,
+        "updatedAt": "2015-07-24T03:42:39.623Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:39.761Z",
+        "groupName": "Cleaning Products",
+        "objectId": "ZVesIL8Q7W",
+        "sortKey": 10,
+        "updatedAt": "2015-07-24T03:42:39.761Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:39.892Z",
+        "groupName": "Condiments \u0026 Spices",
+        "objectId": "z00rbGvYlb",
+        "sortKey": 11,
+        "updatedAt": "2015-07-24T03:42:39.892Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:40.034Z",
+        "groupName": "Cookies, Snacks \u0026 Candy",
+        "objectId": "hCYVZuS820",
+        "sortKey": 12,
+        "updatedAt": "2015-07-24T03:42:40.034Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:40.153Z",
+        "groupName": "Dairy, Eggs \u0026 Cheese",
+        "objectId": "nwvUcgKcV4",
+        "sortKey": 13,
+        "updatedAt": "2015-07-24T03:42:40.153Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:40.301Z",
+        "groupName": "Deli",
+        "objectId": "bo1S3CG0Ds",
+        "sortKey": 14,
+        "updatedAt": "2015-07-24T03:42:40.301Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:40.445Z",
+        "groupName": "Flowers",
+        "objectId": "tPBypmxaWE",
+        "sortKey": 15,
+        "updatedAt": "2015-07-24T03:42:40.445Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:40.587Z",
+        "groupName": "Frozen Foods",
+        "objectId": "ymHmB27B5C",
+        "sortKey": 16,
+        "updatedAt": "2015-07-24T03:42:40.587Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:40.724Z",
+        "groupName": "Grains, Pasta \u0026 Sides",
+        "objectId": "GBNQX2mgbt",
+        "sortKey": 17,
+        "updatedAt": "2015-07-24T03:42:40.724Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:40.868Z",
+        "groupName": "International Cuisines",
+        "objectId": "6anN7KpnkS",
+        "sortKey": 18,
+        "updatedAt": "2015-07-24T03:42:40.868Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:40.995Z",
+        "groupName": "Meat \u0026 Seafood",
+        "objectId": "HXGGNyIWD7",
+        "sortKey": 19,
+        "updatedAt": "2015-07-24T03:42:40.995Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:41.128Z",
+        "groupName": "Paper \u0026 Plastics",
+        "objectId": "UjGWb1onZQ",
+        "sortKey": 20,
+        "updatedAt": "2015-07-24T03:42:41.128Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:41.268Z",
+        "groupName": "Personal Care \u0026 Health",
+        "objectId": "gR9633RxIa",
+        "sortKey": 21,
+        "updatedAt": "2015-07-24T03:42:41.268Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:41.459Z",
+        "groupName": "Pet Care",
+        "objectId": "nqzGAhQ75S",
+        "sortKey": 22,
+        "updatedAt": "2015-07-24T03:42:41.459Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:41.602Z",
+        "groupName": "Produce",
+        "objectId": "G8To2Kfwvn",
+        "sortKey": 23,
+        "updatedAt": "2015-07-24T03:42:41.602Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:41.829Z",
+        "groupName": "Wine \u0026 Spirits",
+        "objectId": "O2gEva40ZV",
+        "sortKey": 24,
+        "updatedAt": "2015-07-24T03:42:41.829Z"
+    }
+] }

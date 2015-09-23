@@ -1,0 +1,4685 @@
+{ "results": [
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:16.577Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "gR9633RxIa"
+        },
+        "itemName": "Aleve",
+        "objectId": "OYz8EnU3q4",
+        "sortKey": 1,
+        "updatedAt": "2015-07-24T03:43:16.577Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:16.791Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "hCYVZuS820"
+        },
+        "itemName": "Almonds",
+        "objectId": "RYdElz11nU",
+        "sortKey": 2,
+        "updatedAt": "2015-07-24T03:43:16.791Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:16.947Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "ZVesIL8Q7W"
+        },
+        "itemName": "Ammonia",
+        "objectId": "dcLINRSlhf",
+        "sortKey": 3,
+        "updatedAt": "2015-07-24T03:43:16.947Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:17.121Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "GBNQX2mgbt"
+        },
+        "itemName": "Angel Hair Pasta",
+        "objectId": "ym9wmhicbL",
+        "sortKey": 4,
+        "updatedAt": "2015-07-24T03:43:17.121Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:17.321Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "z00rbGvYlb"
+        },
+        "itemName": "Apple Cider Vinegar",
+        "objectId": "zg5I7Z2eHC",
+        "sortKey": 5,
+        "updatedAt": "2015-07-24T03:43:17.321Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:17.556Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "G8To2Kfwvn"
+        },
+        "itemName": "Apples",
+        "objectId": "fJyzJI4NDF",
+        "sortKey": 6,
+        "updatedAt": "2015-07-24T03:43:17.556Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:17.938Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "gR9633RxIa"
+        },
+        "itemName": "Aspirin",
+        "objectId": "wUDvQoTovH",
+        "sortKey": 7,
+        "updatedAt": "2015-07-24T03:43:17.938Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:18.069Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "G8To2Kfwvn"
+        },
+        "itemName": "Avocado",
+        "objectId": "MVUvNGq4LT",
+        "sortKey": 8,
+        "updatedAt": "2015-07-24T03:43:18.069Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:18.294Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "6x7MLj2W4W"
+        },
+        "itemName": "Baby Bottles",
+        "objectId": "jS3UxYBdXv",
+        "sortKey": 9,
+        "updatedAt": "2015-07-24T03:43:18.294Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:18.753Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "6x7MLj2W4W"
+        },
+        "itemName": "Baby Food",
+        "objectId": "31S4gs5UG1",
+        "sortKey": 10,
+        "updatedAt": "2015-07-24T03:43:18.753Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:18.916Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "6x7MLj2W4W"
+        },
+        "itemName": "Baby Formula",
+        "objectId": "AD6TL9FjvP",
+        "sortKey": 11,
+        "updatedAt": "2015-07-24T03:43:18.916Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:19.144Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "6x7MLj2W4W"
+        },
+        "itemName": "Baby Wipes",
+        "objectId": "iokXF5yQ1E",
+        "sortKey": 12,
+        "updatedAt": "2015-07-24T03:43:19.144Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:19.341Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "6x7MLj2W4W"
+        },
+        "itemName": "BabyDiapers",
+        "objectId": "rS8YuL5VKl",
+        "sortKey": 13,
+        "updatedAt": "2015-07-24T03:43:19.341Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:19.619Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "HXGGNyIWD7"
+        },
+        "itemName": "Bacon",
+        "objectId": "wDtBImS8sh",
+        "sortKey": 14,
+        "updatedAt": "2015-07-24T03:43:19.619Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:19.839Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "0mtIBQrbyx"
+        },
+        "itemName": "Baked Beans",
+        "objectId": "wFXzj9nGTd",
+        "sortKey": 15,
+        "updatedAt": "2015-07-24T03:43:19.839Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:20.058Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "z00rbGvYlb"
+        },
+        "itemName": "Baking Powder",
+        "objectId": "SgU6aJUgcA",
+        "sortKey": 16,
+        "updatedAt": "2015-07-24T03:43:20.058Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:20.248Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "z00rbGvYlb"
+        },
+        "itemName": "Baking Soda",
+        "objectId": "s8atLjOTrG",
+        "sortKey": 17,
+        "updatedAt": "2015-07-24T03:43:20.248Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:20.402Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "z00rbGvYlb"
+        },
+        "itemName": "Balsamic Vinegar",
+        "objectId": "u1X3fmAt1E",
+        "sortKey": 18,
+        "updatedAt": "2015-07-24T03:43:20.402Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:20.619Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "G8To2Kfwvn"
+        },
+        "itemName": "Bananas",
+        "objectId": "iNejlUmMCj",
+        "sortKey": 19,
+        "updatedAt": "2015-07-24T03:43:20.619Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:20.877Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "gR9633RxIa"
+        },
+        "itemName": "Bath Soap",
+        "objectId": "wRavtBan85",
+        "sortKey": 20,
+        "updatedAt": "2015-07-24T03:43:20.877Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:21.058Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "ZVesIL8Q7W"
+        },
+        "itemName": "Bathroom Cleaner",
+        "objectId": "41xbJ19AkA",
+        "sortKey": 21,
+        "updatedAt": "2015-07-24T03:43:21.058Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:21.278Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "tTJfojcz7P"
+        },
+        "itemName": "Beer",
+        "objectId": "0aaIciDsCq",
+        "sortKey": 22,
+        "updatedAt": "2015-07-24T03:43:21.278Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:21.550Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "ymHmB27B5C"
+        },
+        "itemName": "Berries - frozen",
+        "objectId": "OCDikWiZLf",
+        "sortKey": 23,
+        "updatedAt": "2015-07-24T03:43:21.550Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:21.763Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "0mtIBQrbyx"
+        },
+        "itemName": "Black Olives",
+        "objectId": "mF1l7H2fDU",
+        "sortKey": 24,
+        "updatedAt": "2015-07-24T03:43:21.763Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:21.967Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "ZVesIL8Q7W"
+        },
+        "itemName": "Bleach",
+        "objectId": "x6tDtvrSvi",
+        "sortKey": 25,
+        "updatedAt": "2015-07-24T03:43:21.967Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:22.172Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "nwvUcgKcV4"
+        },
+        "itemName": "Blue Cheese",
+        "objectId": "EqpMMTpXfI",
+        "sortKey": 26,
+        "updatedAt": "2015-07-24T03:43:22.172Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:22.296Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "tTJfojcz7P"
+        },
+        "itemName": "Blue Moon",
+        "objectId": "FBXFSm1QhS",
+        "sortKey": 27,
+        "updatedAt": "2015-07-24T03:43:22.296Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:22.429Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "G8To2Kfwvn"
+        },
+        "itemName": "Blueberries",
+        "objectId": "QJFFDvQ6y0",
+        "sortKey": 28,
+        "updatedAt": "2015-07-24T03:43:22.429Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:22.554Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "NP44sIJeRs"
+        },
+        "itemName": "Branflakes",
+        "objectId": "WhUSvRkpCH",
+        "sortKey": 29,
+        "updatedAt": "2015-07-24T03:43:22.554Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:22.682Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "sirBg1FHxe"
+        },
+        "itemName": "Bread - fresh",
+        "objectId": "J9ceMN0Tc1",
+        "sortKey": 30,
+        "updatedAt": "2015-07-24T03:43:22.682Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:22.807Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "BYOd3JuWBk"
+        },
+        "itemName": "Bread",
+        "objectId": "7yzxHS0MSa",
+        "sortKey": 31,
+        "updatedAt": "2015-07-24T03:43:22.807Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:22.962Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "NP44sIJeRs"
+        },
+        "itemName": "Breakfast Bars",
+        "objectId": "rEBUFkjfF4",
+        "sortKey": 32,
+        "updatedAt": "2015-07-24T03:43:22.962Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:23.084Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "G8To2Kfwvn"
+        },
+        "itemName": "Broccoli",
+        "objectId": "8eA2wJ0hjp",
+        "sortKey": 33,
+        "updatedAt": "2015-07-24T03:43:23.084Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:23.200Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "GkxWyAsacW"
+        },
+        "itemName": "Brownie Mixes",
+        "objectId": "AXshlJHisv",
+        "sortKey": 34,
+        "updatedAt": "2015-07-24T03:43:23.200Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:23.369Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "tTJfojcz7P"
+        },
+        "itemName": "Budweiser",
+        "objectId": "XPj8UYlj97",
+        "sortKey": 35,
+        "updatedAt": "2015-07-24T03:43:23.369Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:23.503Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "O2gEva40ZV"
+        },
+        "itemName": "Bourbon",
+        "objectId": "d6Wpjxlunq",
+        "sortKey": 36,
+        "updatedAt": "2015-07-24T03:43:23.503Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:23.636Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "nwvUcgKcV4"
+        },
+        "itemName": "Buttermilk",
+        "objectId": "akI7csnma9",
+        "sortKey": 37,
+        "updatedAt": "2015-07-24T03:43:23.636Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:23.757Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "G8To2Kfwvn"
+        },
+        "itemName": "Butternut Squash",
+        "objectId": "9AeDj1IaZm",
+        "sortKey": 38,
+        "updatedAt": "2015-07-24T03:43:23.757Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:23.886Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "G8To2Kfwvn"
+        },
+        "itemName": "Cabbage",
+        "objectId": "GGobDvC21x",
+        "sortKey": 39,
+        "updatedAt": "2015-07-24T03:43:23.886Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:24.000Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "GkxWyAsacW"
+        },
+        "itemName": "Cake Mixes",
+        "objectId": "FKViJIZRRP",
+        "sortKey": 40,
+        "updatedAt": "2015-07-24T03:43:24.000Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:24.184Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "sirBg1FHxe"
+        },
+        "itemName": "Cakes",
+        "objectId": "jQkZ7pkksM",
+        "sortKey": 41,
+        "updatedAt": "2015-07-24T03:43:24.184Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:24.310Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "hCYVZuS820"
+        },
+        "itemName": "Candy",
+        "objectId": "Wtk6ugHakQ",
+        "sortKey": 42,
+        "updatedAt": "2015-07-24T03:43:24.310Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:24.436Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "G8To2Kfwvn"
+        },
+        "itemName": "Carrots",
+        "objectId": "03RAYryjFD",
+        "sortKey": 43,
+        "updatedAt": "2015-07-24T03:43:24.436Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:24.562Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "nqzGAhQ75S"
+        },
+        "itemName": "Cat Food",
+        "objectId": "2TbiA4iTOs",
+        "sortKey": 44,
+        "updatedAt": "2015-07-24T03:43:24.562Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:24.681Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "nqzGAhQ75S"
+        },
+        "itemName": "Cat Litter",
+        "objectId": "A3boQXJoOw",
+        "sortKey": 45,
+        "updatedAt": "2015-07-24T03:43:24.681Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:24.858Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "nqzGAhQ75S"
+        },
+        "itemName": "Cat Treats",
+        "objectId": "9GeX2iyTHf",
+        "sortKey": 46,
+        "updatedAt": "2015-07-24T03:43:24.858Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:25.026Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "z00rbGvYlb"
+        },
+        "itemName": "Catsup",
+        "objectId": "MKqIfQwrfo",
+        "sortKey": 47,
+        "updatedAt": "2015-07-24T03:43:25.026Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:25.195Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "NP44sIJeRs"
+        },
+        "itemName": "Cereal",
+        "objectId": "ZP24SXUoFH",
+        "sortKey": 48,
+        "updatedAt": "2015-07-24T03:43:25.195Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:25.381Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "nwvUcgKcV4"
+        },
+        "itemName": "Cheese",
+        "objectId": "aJtJdiWbuu",
+        "sortKey": 49,
+        "updatedAt": "2015-07-24T03:43:25.381Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:25.585Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "HXGGNyIWD7"
+        },
+        "itemName": "Chicken Breasts",
+        "objectId": "WP8qGcE28r",
+        "sortKey": 50,
+        "updatedAt": "2015-07-24T03:43:25.585Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:25.776Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "0mtIBQrbyx"
+        },
+        "itemName": "Chicken Broth",
+        "objectId": "xenst1puz7",
+        "sortKey": 51,
+        "updatedAt": "2015-07-24T03:43:25.776Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:25.905Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "HXGGNyIWD7"
+        },
+        "itemName": "Chicken Thighs",
+        "objectId": "ueYqSrzZPo",
+        "sortKey": 52,
+        "updatedAt": "2015-07-24T03:43:25.905Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:26.092Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "HXGGNyIWD7"
+        },
+        "itemName": "Chicken",
+        "objectId": "KejOf66unT",
+        "sortKey": 53,
+        "updatedAt": "2015-07-24T03:43:26.092Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:26.260Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "hCYVZuS820"
+        },
+        "itemName": "Chips",
+        "objectId": "N15lABZgZO",
+        "sortKey": 54,
+        "updatedAt": "2015-07-24T03:43:26.260Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:26.426Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "NP44sIJeRs"
+        },
+        "itemName": "Clif Bars",
+        "objectId": "uld3CQCs5W",
+        "sortKey": 55,
+        "updatedAt": "2015-07-24T03:43:26.426Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:26.635Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "PD1CX3JLJk"
+        },
+        "itemName": "Coca-Cola",
+        "objectId": "XNjKYNKgIa",
+        "sortKey": 56,
+        "updatedAt": "2015-07-24T03:43:26.635Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:27.007Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "UjGWb1onZQ"
+        },
+        "itemName": "Coffee Filters",
+        "objectId": "bEcjJ1xo3D",
+        "sortKey": 57,
+        "updatedAt": "2015-07-24T03:43:27.007Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:27.184Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "PD1CX3JLJk"
+        },
+        "itemName": "Coffee",
+        "objectId": "iR8rNWFcNu",
+        "sortKey": 58,
+        "updatedAt": "2015-07-24T03:43:27.184Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:27.399Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "gR9633RxIa"
+        },
+        "itemName": "Cold \u0026 Flu Medicines",
+        "objectId": "7ittDepSyH",
+        "sortKey": 59,
+        "updatedAt": "2015-07-24T03:43:27.399Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:27.824Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "sirBg1FHxe"
+        },
+        "itemName": "Cookies - fresh",
+        "objectId": "0FaTsDcC2M",
+        "sortKey": 60,
+        "updatedAt": "2015-07-24T03:43:27.824Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:27.980Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "ymHmB27B5C"
+        },
+        "itemName": "Corn - frozen",
+        "objectId": "P7Ezez4vWO",
+        "sortKey": 61,
+        "updatedAt": "2015-07-24T03:43:27.980Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:28.201Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "0mtIBQrbyx"
+        },
+        "itemName": "Corn-canned",
+        "objectId": "srEWryjwF4",
+        "sortKey": 62,
+        "updatedAt": "2015-07-24T03:43:28.201Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:28.651Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "G8To2Kfwvn"
+        },
+        "itemName": "Corn-fresh",
+        "objectId": "EZQWAXhLhK",
+        "sortKey": 63,
+        "updatedAt": "2015-07-24T03:43:28.651Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:28.825Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "NP44sIJeRs"
+        },
+        "itemName": "Cornflakes",
+        "objectId": "316Mt2fTk5",
+        "sortKey": 64,
+        "updatedAt": "2015-07-24T03:43:28.825Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:29.038Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "nwvUcgKcV4"
+        },
+        "itemName": "Cottage Cheese",
+        "objectId": "ke149ZauSu",
+        "sortKey": 65,
+        "updatedAt": "2015-07-24T03:43:29.038Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:29.465Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "HXGGNyIWD7"
+        },
+        "itemName": "Crab",
+        "objectId": "V0sgweuOL2",
+        "sortKey": 66,
+        "updatedAt": "2015-07-24T03:43:29.465Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:29.689Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "hCYVZuS820"
+        },
+        "itemName": "Crackers",
+        "objectId": "McQi9I2hVl",
+        "sortKey": 67,
+        "updatedAt": "2015-07-24T03:43:29.689Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:29.839Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "nwvUcgKcV4"
+        },
+        "itemName": "Cream Cheese",
+        "objectId": "DDJS9rJbiy",
+        "sortKey": 68,
+        "updatedAt": "2015-07-24T03:43:29.839Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:30.050Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "0mtIBQrbyx"
+        },
+        "itemName": "Cream of Mushroom Soup",
+        "objectId": "UiMkjBUKvY",
+        "sortKey": 69,
+        "updatedAt": "2015-07-24T03:43:30.050Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:30.341Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "bo1S3CG0Ds"
+        },
+        "itemName": "Deli Bacon",
+        "objectId": "4KnuK6P8kV",
+        "sortKey": 70,
+        "updatedAt": "2015-07-24T03:43:30.341Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:30.725Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "bo1S3CG0Ds"
+        },
+        "itemName": "Deli Cheese",
+        "objectId": "hScVO2pTbL",
+        "sortKey": 71,
+        "updatedAt": "2015-07-24T03:43:30.725Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:30.903Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "bo1S3CG0Ds"
+        },
+        "itemName": "Deli Ham",
+        "objectId": "OqmsmMScz6",
+        "sortKey": 72,
+        "updatedAt": "2015-07-24T03:43:30.903Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:31.121Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "bo1S3CG0Ds"
+        },
+        "itemName": "Deli Meats",
+        "objectId": "18PHfH3757",
+        "sortKey": 73,
+        "updatedAt": "2015-07-24T03:43:31.121Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:31.520Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "bo1S3CG0Ds"
+        },
+        "itemName": "Deli Turkey",
+        "objectId": "6tc5dHjNDf",
+        "sortKey": 74,
+        "updatedAt": "2015-07-24T03:43:31.520Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:31.687Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "gR9633RxIa"
+        },
+        "itemName": "Deodorant",
+        "objectId": "GvqWD4MrfD",
+        "sortKey": 75,
+        "updatedAt": "2015-07-24T03:43:31.687Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:31.893Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "ymHmB27B5C"
+        },
+        "itemName": "Dinners - frozen",
+        "objectId": "cXzuVuDWCD",
+        "sortKey": 76,
+        "updatedAt": "2015-07-24T03:43:31.893Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:32.105Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "ZVesIL8Q7W"
+        },
+        "itemName": "Dish Soap",
+        "objectId": "brtjxrbzSR",
+        "sortKey": 77,
+        "updatedAt": "2015-07-24T03:43:32.105Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:32.268Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "PD1CX3JLJk"
+        },
+        "itemName": "Distilled Water",
+        "objectId": "VtLEf9SVKt",
+        "sortKey": 78,
+        "updatedAt": "2015-07-24T03:43:32.268Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:32.433Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "nqzGAhQ75S"
+        },
+        "itemName": "Dog Biscuits",
+        "objectId": "B48z9SPrvi",
+        "sortKey": 79,
+        "updatedAt": "2015-07-24T03:43:32.433Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:32.655Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "nqzGAhQ75S"
+        },
+        "itemName": "Dog Food",
+        "objectId": "rbvczhaHb1",
+        "sortKey": 80,
+        "updatedAt": "2015-07-24T03:43:32.655Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:33.162Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "nqzGAhQ75S"
+        },
+        "itemName": "Dog Treats",
+        "objectId": "HVVSYfxo9c",
+        "sortKey": 81,
+        "updatedAt": "2015-07-24T03:43:33.162Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:33.330Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "sirBg1FHxe"
+        },
+        "itemName": "Donuts",
+        "objectId": "Lz9CQcMqDI",
+        "sortKey": 82,
+        "updatedAt": "2015-07-24T03:43:33.330Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:33.504Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "hCYVZuS820"
+        },
+        "itemName": "Doritos",
+        "objectId": "EC6bR1uGuq",
+        "sortKey": 83,
+        "updatedAt": "2015-07-24T03:43:33.504Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:33.665Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "nwvUcgKcV4"
+        },
+        "itemName": "Eggs",
+        "objectId": "PyWKF2yPF2",
+        "sortKey": 84,
+        "updatedAt": "2015-07-24T03:43:33.665Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:33.833Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "6anN7KpnkS"
+        },
+        "itemName": "Enchilada Sauce",
+        "objectId": "5ocX3kiJ6G",
+        "sortKey": 85,
+        "updatedAt": "2015-07-24T03:43:33.833Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:34.051Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "PD1CX3JLJk"
+        },
+        "itemName": "Energy Drink",
+        "objectId": "Z9VOgW2E1B",
+        "sortKey": 86,
+        "updatedAt": "2015-07-24T03:43:34.051Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:34.379Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "BYOd3JuWBk"
+        },
+        "itemName": "English Muffins",
+        "objectId": "ljaZIyH92C",
+        "sortKey": 87,
+        "updatedAt": "2015-07-24T03:43:34.379Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:34.614Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "tTJfojcz7P"
+        },
+        "itemName": "Fat Tire",
+        "objectId": "MsCBgI2D1T",
+        "sortKey": 88,
+        "updatedAt": "2015-07-24T03:43:34.614Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:34.774Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "nwvUcgKcV4"
+        },
+        "itemName": "Feta",
+        "objectId": "8vOWyhWFzD",
+        "sortKey": 89,
+        "updatedAt": "2015-07-24T03:43:34.774Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:35.046Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "hCYVZuS820"
+        },
+        "itemName": "Fig Newtons",
+        "objectId": "NFSj09dEMR",
+        "sortKey": 90,
+        "updatedAt": "2015-07-24T03:43:35.046Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:35.600Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "GkxWyAsacW"
+        },
+        "itemName": "Flour",
+        "objectId": "zRJjtf5lYg",
+        "sortKey": 91,
+        "updatedAt": "2015-07-24T03:43:35.600Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:35.808Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "tPBypmxaWE"
+        },
+        "itemName": "Flowers",
+        "objectId": "XU7B9LhgT8",
+        "sortKey": 92,
+        "updatedAt": "2015-07-24T03:43:35.808Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:35.923Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "gR9633RxIa"
+        },
+        "itemName": "Foot Powder",
+        "objectId": "BiO7HWy1o4",
+        "sortKey": 93,
+        "updatedAt": "2015-07-24T03:43:35.923Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:36.150Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "G8To2Kfwvn"
+        },
+        "itemName": "Garlic",
+        "objectId": "qpOvksryh5",
+        "sortKey": 94,
+        "updatedAt": "2015-07-24T03:43:36.150Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:36.425Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "O2gEva40ZV"
+        },
+        "itemName": "Gin",
+        "objectId": "JHlE445hvN",
+        "sortKey": 95,
+        "updatedAt": "2015-07-24T03:43:36.425Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:36.591Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "PD1CX3JLJk"
+        },
+        "itemName": "Ginger Ale",
+        "objectId": "gVf5MYZwoL",
+        "sortKey": 96,
+        "updatedAt": "2015-07-24T03:43:36.591Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:36.810Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "G8To2Kfwvn"
+        },
+        "itemName": "Grapefruit",
+        "objectId": "0kOSfTRhmw",
+        "sortKey": 97,
+        "updatedAt": "2015-07-24T03:43:36.810Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:37.251Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "G8To2Kfwvn"
+        },
+        "itemName": "Grapes",
+        "objectId": "ldltVQOdZE",
+        "sortKey": 98,
+        "updatedAt": "2015-07-24T03:43:37.251Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:37.456Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "0mtIBQrbyx"
+        },
+        "itemName": "Green Beans - canned",
+        "objectId": "6nrzKVWDao",
+        "sortKey": 99,
+        "updatedAt": "2015-07-24T03:43:37.456Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:37.638Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "G8To2Kfwvn"
+        },
+        "itemName": "Green Beans - fresh",
+        "objectId": "Ah7hKaGhXK",
+        "sortKey": 100,
+        "updatedAt": "2015-07-24T03:43:37.638Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:37.868Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "ymHmB27B5C"
+        },
+        "itemName": "Green Beans - frozen",
+        "objectId": "Dn1cO796vr",
+        "sortKey": 101,
+        "updatedAt": "2015-07-24T03:43:37.868Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:38.020Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "HXGGNyIWD7"
+        },
+        "itemName": "Ground Beef",
+        "objectId": "pQja56ZUQk",
+        "sortKey": 102,
+        "updatedAt": "2015-07-24T03:43:38.020Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:38.171Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "HXGGNyIWD7"
+        },
+        "itemName": "Ground Turkey",
+        "objectId": "sXND941UCW",
+        "sortKey": 103,
+        "updatedAt": "2015-07-24T03:43:38.171Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:38.401Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "tTJfojcz7P"
+        },
+        "itemName": "Guinness",
+        "objectId": "KhnT8q8ng5",
+        "sortKey": 104,
+        "updatedAt": "2015-07-24T03:43:38.401Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:38.889Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "hCYVZuS820"
+        },
+        "itemName": "Gum",
+        "objectId": "zYupp0rruy",
+        "sortKey": 105,
+        "updatedAt": "2015-07-24T03:43:38.889Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:39.100Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "BYOd3JuWBk"
+        },
+        "itemName": "Hamburger Buns",
+        "objectId": "5EqXqC3jJ4",
+        "sortKey": 106,
+        "updatedAt": "2015-07-24T03:43:39.100Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:39.358Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "HXGGNyIWD7"
+        },
+        "itemName": "Hamburger",
+        "objectId": "pUTgEo1Cuz",
+        "sortKey": 107,
+        "updatedAt": "2015-07-24T03:43:39.358Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:39.706Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "ZVesIL8Q7W"
+        },
+        "itemName": "Hand Soap",
+        "objectId": "Wj9kqXhcpx",
+        "sortKey": 108,
+        "updatedAt": "2015-07-24T03:43:39.706Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:39.925Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "ymHmB27B5C"
+        },
+        "itemName": "Hash Browns - frozen",
+        "objectId": "1v3zvG5Qt4",
+        "sortKey": 109,
+        "updatedAt": "2015-07-24T03:43:39.925Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:40.136Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "z00rbGvYlb"
+        },
+        "itemName": "Honey",
+        "objectId": "qjQ6Ad52SW",
+        "sortKey": 110,
+        "updatedAt": "2015-07-24T03:43:40.136Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:40.308Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "BYOd3JuWBk"
+        },
+        "itemName": "Hotdog Buns",
+        "objectId": "SmQ7TO40J8",
+        "sortKey": 111,
+        "updatedAt": "2015-07-24T03:43:40.308Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:40.523Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "bo1S3CG0Ds"
+        },
+        "itemName": "Hummus",
+        "objectId": "Zo6qbObDGq",
+        "sortKey": 112,
+        "updatedAt": "2015-07-24T03:43:40.523Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:40.935Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "ymHmB27B5C"
+        },
+        "itemName": "Ice Cream",
+        "objectId": "F3EQpLqIAZ",
+        "sortKey": 113,
+        "updatedAt": "2015-07-24T03:43:40.935Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:41.102Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "NP44sIJeRs"
+        },
+        "itemName": "Instant Breakfast",
+        "objectId": "gey3thy6Mo",
+        "sortKey": 114,
+        "updatedAt": "2015-07-24T03:43:41.102Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:41.353Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "hCYVZuS820"
+        },
+        "itemName": "Jerky",
+        "objectId": "sEUuDbdFqL",
+        "sortKey": 115,
+        "updatedAt": "2015-07-24T03:43:41.353Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:41.802Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "PD1CX3JLJk"
+        },
+        "itemName": "Juices",
+        "objectId": "y6tDudSrjV",
+        "sortKey": 116,
+        "updatedAt": "2015-07-24T03:43:41.802Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:41.936Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "ymHmB27B5C"
+        },
+        "itemName": "Juice - frozen",
+        "objectId": "1A90NcJAKU",
+        "sortKey": 117,
+        "updatedAt": "2015-07-24T03:43:41.936Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:42.165Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "UjGWb1onZQ"
+        },
+        "itemName": "Kleenex",
+        "objectId": "Y5a160EiJW",
+        "sortKey": 118,
+        "updatedAt": "2015-07-24T03:43:42.165Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:42.327Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "ZVesIL8Q7W"
+        },
+        "itemName": "Laundry Detergent",
+        "objectId": "ESjRQf6PHr",
+        "sortKey": 119,
+        "updatedAt": "2015-07-24T03:43:42.327Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:42.485Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "ZVesIL8Q7W"
+        },
+        "itemName": "Laundry Soap",
+        "objectId": "Hx8AICs7tM",
+        "sortKey": 120,
+        "updatedAt": "2015-07-24T03:43:42.485Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:42.661Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "G8To2Kfwvn"
+        },
+        "itemName": "Lemons",
+        "objectId": "evv5YWTA7E",
+        "sortKey": 121,
+        "updatedAt": "2015-07-24T03:43:42.661Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:42.792Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "G8To2Kfwvn"
+        },
+        "itemName": "Lettuce",
+        "objectId": "eTpt3SDUnx",
+        "sortKey": 122,
+        "updatedAt": "2015-07-24T03:43:42.792Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:42.956Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "ymHmB27B5C"
+        },
+        "itemName": "Lima Beans - frozen",
+        "objectId": "5yt3EXP1qN",
+        "sortKey": 123,
+        "updatedAt": "2015-07-24T03:43:42.956Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:43.123Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "G8To2Kfwvn"
+        },
+        "itemName": "Limes",
+        "objectId": "P2rKMdAPgP",
+        "sortKey": 124,
+        "updatedAt": "2015-07-24T03:43:43.123Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:43.259Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "GBNQX2mgbt"
+        },
+        "itemName": "Macaroni",
+        "objectId": "RZ6NMcQ1Fy",
+        "sortKey": 125,
+        "updatedAt": "2015-07-24T03:43:43.259Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:43.408Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "gR9633RxIa"
+        },
+        "itemName": "Makeup",
+        "objectId": "ehatiKTn1r",
+        "sortKey": 126,
+        "updatedAt": "2015-07-24T03:43:43.408Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:43.539Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "GBNQX2mgbt"
+        },
+        "itemName": "Manicotti Noodles",
+        "objectId": "HvX1dhmagX",
+        "sortKey": 127,
+        "updatedAt": "2015-07-24T03:43:43.539Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:43.666Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "GBNQX2mgbt"
+        },
+        "itemName": "Marinara Sauce",
+        "objectId": "U7T6QSLxyt",
+        "sortKey": 128,
+        "updatedAt": "2015-07-24T03:43:43.666Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:43.794Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "6anN7KpnkS"
+        },
+        "itemName": "Masa's Curry Sauce",
+        "objectId": "PDEA4ACGvV",
+        "sortKey": 129,
+        "updatedAt": "2015-07-24T03:43:43.794Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:43.919Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "z00rbGvYlb"
+        },
+        "itemName": "Mayonnaise",
+        "objectId": "aG9gq6sjQ7",
+        "sortKey": 130,
+        "updatedAt": "2015-07-24T03:43:43.919Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:44.042Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "ymHmB27B5C"
+        },
+        "itemName": "Meals - frozen",
+        "objectId": "Pg6V2p1fde",
+        "sortKey": 131,
+        "updatedAt": "2015-07-24T03:43:44.042Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:44.172Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "G8To2Kfwvn"
+        },
+        "itemName": "Melons",
+        "objectId": "3Bco2u67Qf",
+        "sortKey": 132,
+        "updatedAt": "2015-07-24T03:43:44.172Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:44.305Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "GBNQX2mgbt"
+        },
+        "itemName": "Mexican Rice",
+        "objectId": "c2umfiQF0r",
+        "sortKey": 133,
+        "updatedAt": "2015-07-24T03:43:44.305Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:44.492Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "nwvUcgKcV4"
+        },
+        "itemName": "Milk",
+        "objectId": "tRS10g5mdI",
+        "sortKey": 134,
+        "updatedAt": "2015-07-24T03:43:44.492Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:44.613Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "tTJfojcz7P"
+        },
+        "itemName": "Miller Lite",
+        "objectId": "WVPHHXa3yG",
+        "sortKey": 135,
+        "updatedAt": "2015-07-24T03:43:44.613Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:44.791Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "hCYVZuS820"
+        },
+        "itemName": "Mints",
+        "objectId": "raGpCkDwNT",
+        "sortKey": 136,
+        "updatedAt": "2015-07-24T03:43:44.791Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:44.987Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "gR9633RxIa"
+        },
+        "itemName": "Mouthwash",
+        "objectId": "wLSIt8RwLa",
+        "sortKey": 137,
+        "updatedAt": "2015-07-24T03:43:44.987Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:45.137Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "nwvUcgKcV4"
+        },
+        "itemName": "Mozzarella",
+        "objectId": "rVO4mFW99L",
+        "sortKey": 138,
+        "updatedAt": "2015-07-24T03:43:45.137Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:45.349Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "z00rbGvYlb"
+        },
+        "itemName": "Mustard",
+        "objectId": "4yneg8YbJ2",
+        "sortKey": 139,
+        "updatedAt": "2015-07-24T03:43:45.349Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:45.744Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "UjGWb1onZQ"
+        },
+        "itemName": "Napkins",
+        "objectId": "X71vOfMkXu",
+        "sortKey": 140,
+        "updatedAt": "2015-07-24T03:43:45.744Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:45.916Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "GBNQX2mgbt"
+        },
+        "itemName": "Noodles",
+        "objectId": "1JhqxsjVx8",
+        "sortKey": 141,
+        "updatedAt": "2015-07-24T03:43:45.916Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:46.090Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "hCYVZuS820"
+        },
+        "itemName": "Nuts",
+        "objectId": "pIBHx4qtWt",
+        "sortKey": 142,
+        "updatedAt": "2015-07-24T03:43:46.090Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:46.306Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "NP44sIJeRs"
+        },
+        "itemName": "Oatmeal",
+        "objectId": "ySBVpGXb8r",
+        "sortKey": 143,
+        "updatedAt": "2015-07-24T03:43:46.306Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:46.730Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "z00rbGvYlb"
+        },
+        "itemName": "Olive Oil",
+        "objectId": "iYf90Dy3gW",
+        "sortKey": 144,
+        "updatedAt": "2015-07-24T03:43:46.730Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:46.943Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "G8To2Kfwvn"
+        },
+        "itemName": "Onions",
+        "objectId": "0mnpKlgX2O",
+        "sortKey": 145,
+        "updatedAt": "2015-07-24T03:43:46.943Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:47.104Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "PD1CX3JLJk"
+        },
+        "itemName": "Orange Juice-fresh",
+        "objectId": "qFHoXng1ca",
+        "sortKey": 146,
+        "updatedAt": "2015-07-24T03:43:47.104Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:47.318Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "ymHmB27B5C"
+        },
+        "itemName": "Orange Juice-frozen",
+        "objectId": "DglJ7Ur2WF",
+        "sortKey": 147,
+        "updatedAt": "2015-07-24T03:43:47.318Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:47.796Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "G8To2Kfwvn"
+        },
+        "itemName": "Oranges",
+        "objectId": "ASWp0WhqrS",
+        "sortKey": 148,
+        "updatedAt": "2015-07-24T03:43:47.796Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:47.952Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "hCYVZuS820"
+        },
+        "itemName": "Oreo Cookies",
+        "objectId": "caDVhshGoI",
+        "sortKey": 149,
+        "updatedAt": "2015-07-24T03:43:47.952Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:48.199Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "UjGWb1onZQ"
+        },
+        "itemName": "Paper Bowls",
+        "objectId": "e1jTwOnftK",
+        "sortKey": 150,
+        "updatedAt": "2015-07-24T03:43:48.199Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:48.715Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "UjGWb1onZQ"
+        },
+        "itemName": "Paper Cups",
+        "objectId": "UPNzccACn0",
+        "sortKey": 151,
+        "updatedAt": "2015-07-24T03:43:48.715Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:48.889Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "UjGWb1onZQ"
+        },
+        "itemName": "Paper Plates",
+        "objectId": "tPg5274VU5",
+        "sortKey": 152,
+        "updatedAt": "2015-07-24T03:43:48.889Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:49.052Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "UjGWb1onZQ"
+        },
+        "itemName": "Paper Towels",
+        "objectId": "Xm3Vh43zSs",
+        "sortKey": 153,
+        "updatedAt": "2015-07-24T03:43:49.052Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:49.446Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "nwvUcgKcV4"
+        },
+        "itemName": "Parmesan Cheese",
+        "objectId": "QRVykm76nc",
+        "sortKey": 154,
+        "updatedAt": "2015-07-24T03:43:49.446Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:49.610Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "GBNQX2mgbt"
+        },
+        "itemName": "Pasta Sauce",
+        "objectId": "rpyukxEbMi",
+        "sortKey": 155,
+        "updatedAt": "2015-07-24T03:43:49.610Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:49.820Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "z00rbGvYlb"
+        },
+        "itemName": "Peanut Butter",
+        "objectId": "4wxAMCvxDA",
+        "sortKey": 156,
+        "updatedAt": "2015-07-24T03:43:49.820Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:49.991Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "hCYVZuS820"
+        },
+        "itemName": "Peanuts",
+        "objectId": "f9nFKR2Mbt",
+        "sortKey": 157,
+        "updatedAt": "2015-07-24T03:43:49.991Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:50.199Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "ymHmB27B5C"
+        },
+        "itemName": "Peas - frozen",
+        "objectId": "9fiDzHdXOs",
+        "sortKey": 158,
+        "updatedAt": "2015-07-24T03:43:50.199Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:50.717Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "PD1CX3JLJk"
+        },
+        "itemName": "Pepsi",
+        "objectId": "IlwgA0tnAD",
+        "sortKey": 159,
+        "updatedAt": "2015-07-24T03:43:50.717Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:50.914Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "z00rbGvYlb"
+        },
+        "itemName": "Pickles",
+        "objectId": "BESOiFEbho",
+        "sortKey": 160,
+        "updatedAt": "2015-07-24T03:43:50.914Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:51.089Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "sirBg1FHxe"
+        },
+        "itemName": "Pies",
+        "objectId": "aT1gjKHMuv",
+        "sortKey": 161,
+        "updatedAt": "2015-07-24T03:43:51.089Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:51.253Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "0mtIBQrbyx"
+        },
+        "itemName": "Pineapple - canned",
+        "objectId": "8YYBxhMHXb",
+        "sortKey": 162,
+        "updatedAt": "2015-07-24T03:43:51.253Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:51.461Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "G8To2Kfwvn"
+        },
+        "itemName": "Pineapple - fresh",
+        "objectId": "akadVH4JNc",
+        "sortKey": 163,
+        "updatedAt": "2015-07-24T03:43:51.461Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:51.673Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "ymHmB27B5C"
+        },
+        "itemName": "Pizza - frozen",
+        "objectId": "sRDMeWkcsa",
+        "sortKey": 164,
+        "updatedAt": "2015-07-24T03:43:51.673Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:52.000Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "hCYVZuS820"
+        },
+        "itemName": "Popcorn",
+        "objectId": "jXYYUihfA0",
+        "sortKey": 165,
+        "updatedAt": "2015-07-24T03:43:52.000Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:52.157Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "HXGGNyIWD7"
+        },
+        "itemName": "Pork Chops",
+        "objectId": "O8gcjC4CoI",
+        "sortKey": 166,
+        "updatedAt": "2015-07-24T03:43:52.157Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:52.374Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "HXGGNyIWD7"
+        },
+        "itemName": "Pork Tenderloin",
+        "objectId": "j0gOk8IeZF",
+        "sortKey": 167,
+        "updatedAt": "2015-07-24T03:43:52.374Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:52.812Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "hCYVZuS820"
+        },
+        "itemName": "Potato Chips",
+        "objectId": "Ob1sSrX1Yf",
+        "sortKey": 168,
+        "updatedAt": "2015-07-24T03:43:52.812Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:52.975Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "ymHmB27B5C"
+        },
+        "itemName": "Potatoes - frozen",
+        "objectId": "mfCmL8fjgn",
+        "sortKey": 169,
+        "updatedAt": "2015-07-24T03:43:52.975Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:53.142Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "G8To2Kfwvn"
+        },
+        "itemName": "Potatoes",
+        "objectId": "N6ec9rEq92",
+        "sortKey": 170,
+        "updatedAt": "2015-07-24T03:43:53.142Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:53.403Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "hCYVZuS820"
+        },
+        "itemName": "Pretzels",
+        "objectId": "BsfRjanUa8",
+        "sortKey": 171,
+        "updatedAt": "2015-07-24T03:43:53.403Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:53.633Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "NP44sIJeRs"
+        },
+        "itemName": "Raisin bran",
+        "objectId": "j53hENaxhZ",
+        "sortKey": 172,
+        "updatedAt": "2015-07-24T03:43:53.633Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:53.804Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "z00rbGvYlb"
+        },
+        "itemName": "Relish",
+        "objectId": "er4iuGUr44",
+        "sortKey": 173,
+        "updatedAt": "2015-07-24T03:43:53.804Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:54.015Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "G8To2Kfwvn"
+        },
+        "itemName": "Rhubarb",
+        "objectId": "VsHCp4WBug",
+        "sortKey": 174,
+        "updatedAt": "2015-07-24T03:43:54.015Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:54.197Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "GBNQX2mgbt"
+        },
+        "itemName": "Rice",
+        "objectId": "l1WtLNeHf9",
+        "sortKey": 175,
+        "updatedAt": "2015-07-24T03:43:54.197Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:54.505Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "PD1CX3JLJk"
+        },
+        "itemName": "Root Beer",
+        "objectId": "VipJgzSAY9",
+        "sortKey": 176,
+        "updatedAt": "2015-07-24T03:43:54.505Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:54.857Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "GkxWyAsacW"
+        },
+        "itemName": "Salt",
+        "objectId": "DWzqXBQxN7",
+        "sortKey": 177,
+        "updatedAt": "2015-07-24T03:43:54.857Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:55.007Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "O2gEva40ZV"
+        },
+        "itemName": "Scotch",
+        "objectId": "ECK6uN40Wu",
+        "sortKey": 178,
+        "updatedAt": "2015-07-24T03:43:55.007Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:55.218Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "gR9633RxIa"
+        },
+        "itemName": "Shampoo",
+        "objectId": "MWWfph9p5L",
+        "sortKey": 179,
+        "updatedAt": "2015-07-24T03:43:55.218Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:55.689Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "ymHmB27B5C"
+        },
+        "itemName": "Shrimp - frozen",
+        "objectId": "0BfPaURP3u",
+        "sortKey": 180,
+        "updatedAt": "2015-07-24T03:43:55.689Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:55.856Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "HXGGNyIWD7"
+        },
+        "itemName": "Shrimp",
+        "objectId": "7dWoPTi6KQ",
+        "sortKey": 181,
+        "updatedAt": "2015-07-24T03:43:55.856Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:56.070Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "PD1CX3JLJk"
+        },
+        "itemName": "Soda Pop",
+        "objectId": "GQ2V6vnVO8",
+        "sortKey": 182,
+        "updatedAt": "2015-07-24T03:43:56.070Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:56.505Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "0mtIBQrbyx"
+        },
+        "itemName": "Soup",
+        "objectId": "2DlqUm79LU",
+        "sortKey": 183,
+        "updatedAt": "2015-07-24T03:43:56.505Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:56.696Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "nwvUcgKcV4"
+        },
+        "itemName": "Sour Cream",
+        "objectId": "ZT60Oorq5j",
+        "sortKey": 184,
+        "updatedAt": "2015-07-24T03:43:56.696Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:56.849Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "GBNQX2mgbt"
+        },
+        "itemName": "Spaghetti",
+        "objectId": "MzNpveN0Au",
+        "sortKey": 185,
+        "updatedAt": "2015-07-24T03:43:56.849Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:57.065Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "GBNQX2mgbt"
+        },
+        "itemName": "Spanish Rice",
+        "objectId": "AzahvQrpQS",
+        "sortKey": 186,
+        "updatedAt": "2015-07-24T03:43:57.065Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:57.317Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "G8To2Kfwvn"
+        },
+        "itemName": "Spinach - fresh",
+        "objectId": "XbBUTKTiFR",
+        "sortKey": 187,
+        "updatedAt": "2015-07-24T03:43:57.317Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:57.492Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "ymHmB27B5C"
+        },
+        "itemName": "Spinach - frozen",
+        "objectId": "hSeWG0cqTx",
+        "sortKey": 188,
+        "updatedAt": "2015-07-24T03:43:57.492Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:57.756Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "HXGGNyIWD7"
+        },
+        "itemName": "Steaks",
+        "objectId": "QRpQ8YGpro",
+        "sortKey": 189,
+        "updatedAt": "2015-07-24T03:43:57.756Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:57.975Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "tTJfojcz7P"
+        },
+        "itemName": "Stella Artois",
+        "objectId": "ogTN2aaLdZ",
+        "sortKey": 190,
+        "updatedAt": "2015-07-24T03:43:57.975Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:58.539Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "tTJfojcz7P"
+        },
+        "itemName": "Stone IPA",
+        "objectId": "81Ec2BChXB",
+        "sortKey": 191,
+        "updatedAt": "2015-07-24T03:43:58.539Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:58.692Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "G8To2Kfwvn"
+        },
+        "itemName": "Strawberries - fresh",
+        "objectId": "tHsBPHAYnA",
+        "sortKey": 192,
+        "updatedAt": "2015-07-24T03:43:58.692Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:58.902Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "UjGWb1onZQ"
+        },
+        "itemName": "Straws",
+        "objectId": "xGrwHaHV8E",
+        "sortKey": 193,
+        "updatedAt": "2015-07-24T03:43:58.902Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:59.074Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "nwvUcgKcV4"
+        },
+        "itemName": "String Cheese",
+        "objectId": "A2LrMAtam5",
+        "sortKey": 194,
+        "updatedAt": "2015-07-24T03:43:59.074Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:59.292Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "GkxWyAsacW"
+        },
+        "itemName": "Sugar",
+        "objectId": "7xbdzkSopM",
+        "sortKey": 195,
+        "updatedAt": "2015-07-24T03:43:59.292Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:59.450Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "z00rbGvYlb"
+        },
+        "itemName": "Syrup",
+        "objectId": "7pCRXwZiuv",
+        "sortKey": 196,
+        "updatedAt": "2015-07-24T03:43:59.450Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:59.682Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "hCYVZuS820"
+        },
+        "itemName": "Taco Chips",
+        "objectId": "FeJCJLkNm1",
+        "sortKey": 197,
+        "updatedAt": "2015-07-24T03:43:59.682Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:43:59.846Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "z00rbGvYlb"
+        },
+        "itemName": "Taco Mix",
+        "objectId": "IU4tAI8Dkf",
+        "sortKey": 198,
+        "updatedAt": "2015-07-24T03:43:59.846Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:44:00.064Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "z00rbGvYlb"
+        },
+        "itemName": "Taco Sauce",
+        "objectId": "0cmaFP6bDk",
+        "sortKey": 199,
+        "updatedAt": "2015-07-24T03:44:00.064Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:44:00.607Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "6anN7KpnkS"
+        },
+        "itemName": "Taco Shells",
+        "objectId": "0uVTyWpKrx",
+        "sortKey": 200,
+        "updatedAt": "2015-07-24T03:44:00.607Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:44:00.784Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "gR9633RxIa"
+        },
+        "itemName": "Tampax",
+        "objectId": "TUjNQBjFAr",
+        "sortKey": 201,
+        "updatedAt": "2015-07-24T03:44:00.784Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:44:01.005Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "PD1CX3JLJk"
+        },
+        "itemName": "Tea",
+        "objectId": "bxUD9HivR1",
+        "sortKey": 202,
+        "updatedAt": "2015-07-24T03:44:01.005Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:44:01.206Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "UjGWb1onZQ"
+        },
+        "itemName": "Toilet Paper",
+        "objectId": "BLiUBJUwrT",
+        "sortKey": 203,
+        "updatedAt": "2015-07-24T03:44:01.206Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:44:01.375Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "0mtIBQrbyx"
+        },
+        "itemName": "Tomato Soup",
+        "objectId": "Q69vxxAmXB",
+        "sortKey": 204,
+        "updatedAt": "2015-07-24T03:44:01.375Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:44:01.508Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "G8To2Kfwvn"
+        },
+        "itemName": "Tomatoes",
+        "objectId": "Own4F9Tw00",
+        "sortKey": 205,
+        "updatedAt": "2015-07-24T03:44:01.508Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:44:01.656Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "gR9633RxIa"
+        },
+        "itemName": "Toothbrush",
+        "objectId": "Sgc901iOm0",
+        "sortKey": 206,
+        "updatedAt": "2015-07-24T03:44:01.656Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:44:01.800Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "gR9633RxIa"
+        },
+        "itemName": "Toothpaste",
+        "objectId": "1huBJbOuba",
+        "sortKey": 207,
+        "updatedAt": "2015-07-24T03:44:01.800Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:44:02.207Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "0mtIBQrbyx"
+        },
+        "itemName": "Tuna Fish - canned",
+        "objectId": "hAVSy9pt8E",
+        "sortKey": 208,
+        "updatedAt": "2015-07-24T03:44:02.207Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:44:02.348Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "HXGGNyIWD7"
+        },
+        "itemName": "Tuna Fish - fresh",
+        "objectId": "CJoigBcnLS",
+        "sortKey": 209,
+        "updatedAt": "2015-07-24T03:44:02.348Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:44:02.488Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "z00rbGvYlb"
+        },
+        "itemName": "Vanilla",
+        "objectId": "IJhZhRubE1",
+        "sortKey": 210,
+        "updatedAt": "2015-07-24T03:44:02.488Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:44:02.667Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "ymHmB27B5C"
+        },
+        "itemName": "Vegetables - frozen",
+        "objectId": "ajMhml16rl",
+        "sortKey": 211,
+        "updatedAt": "2015-07-24T03:44:02.667Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:44:02.871Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "z00rbGvYlb"
+        },
+        "itemName": "Vinegar",
+        "objectId": "JtCmJ35Gwm",
+        "sortKey": 212,
+        "updatedAt": "2015-07-24T03:44:02.871Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:44:02.994Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "O2gEva40ZV"
+        },
+        "itemName": "Vodka",
+        "objectId": "enKU9OaEnh",
+        "sortKey": 213,
+        "updatedAt": "2015-07-24T03:44:02.994Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:44:03.120Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "GBNQX2mgbt"
+        },
+        "itemName": "White Rice",
+        "objectId": "Hr2qWCbYCL",
+        "sortKey": 214,
+        "updatedAt": "2015-07-24T03:44:03.120Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:44:03.249Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "GBNQX2mgbt"
+        },
+        "itemName": "Wild Rice",
+        "objectId": "TJGOl0WG1e",
+        "sortKey": 215,
+        "updatedAt": "2015-07-24T03:44:03.249Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:44:03.408Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "O2gEva40ZV"
+        },
+        "itemName": "Wine",
+        "objectId": "qCrC5jfgDJ",
+        "sortKey": 216,
+        "updatedAt": "2015-07-24T03:44:03.408Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:44:03.536Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "GkxWyAsacW"
+        },
+        "itemName": "Yeast",
+        "objectId": "k5CXca8Idh",
+        "sortKey": 217,
+        "updatedAt": "2015-07-24T03:44:03.536Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:44:03.692Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "ymHmB27B5C"
+        },
+        "itemName": "Yogurt - frozen",
+        "objectId": "hwreyq54uE",
+        "sortKey": 218,
+        "updatedAt": "2015-07-24T03:44:03.692Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:44:03.818Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "nwvUcgKcV4"
+        },
+        "itemName": "Yogurt",
+        "objectId": "AEBF3JFgPV",
+        "sortKey": 219,
+        "updatedAt": "2015-07-24T03:44:03.818Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:44:03.953Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "z00rbGvYlb"
+        },
+        "itemName": "Green Olives",
+        "objectId": "zwqipT3grh",
+        "sortKey": 220,
+        "updatedAt": "2015-07-24T03:44:03.953Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:44:04.072Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "6anN7KpnkS"
+        },
+        "itemName": "Tortillas",
+        "objectId": "jWhuTRo18p",
+        "sortKey": 221,
+        "updatedAt": "2015-07-24T03:44:04.072Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:44:04.197Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "G8To2Kfwvn"
+        },
+        "itemName": "Parsley",
+        "objectId": "HY6ufWGEBt",
+        "sortKey": 222,
+        "updatedAt": "2015-07-24T03:44:04.197Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "createdAt": "2015-07-24T03:44:04.401Z",
+        "groupID": {
+            "__type": "Pointer",
+            "className": "Groups",
+            "objectId": "tTJfojcz7P"
+        },
+        "itemName": "Apricot Ale",
+        "objectId": "YmM4TYXF9d",
+        "sortKey": 223,
+        "updatedAt": "2015-07-24T03:44:04.401Z"
+    }
+] }

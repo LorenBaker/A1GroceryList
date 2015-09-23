@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Do not change the order of the item location list-->
+    <string-array name="initial_location_list">
+        <item>[No Location]</item>
+        <item>Front-Left</item>
+        <item>Front-Mid</item>
+        <item>Front-Right</item>
+        <item>Middle-Left</item>
+        <item>Middle-Right</item>
+        <item>Rear-Left</item>
+        <item>Rear-Mid</item>
+        <item>Rear-Right</item>
+    </string-array>
+
+
+    <!--Don't Change grocery_groups order-->
+    <string-array name="grocery_groups">
+        <item>[No Group]</item>
+        <item>Baby Care</item>
+        <item>Bakery</item>
+        <item>Baking Goods</item>
+        <item>Beer</item>
+        <item>Beverages</item>
+        <item>Breads</item>
+        <item>Breakfast &amp; Cereal</item>
+        <item>Canned Goods &amp; Soups</item>
+        <item>Cleaning Products</item>
+        <item>Condiments &amp; Spices</item>
+        <item>Cookies, Snacks &amp; Candy</item>
+        <item>Dairy, Eggs &amp; Cheese</item>
+        <item>Deli</item>
+        <item>Flowers</item>
+        <item>Frozen Foods</item>
+        <item>Grains, Pasta &amp; Sides</item>
+        <item>International Cuisines</item>
+        <item>Meat &amp; Seafood</item>
+        <item>Paper &amp; Plastics</item>
+        <item>Personal Care &amp; Health</item>
+        <item>Pet Care</item>
+        <item>Produce</item>
+        <item>Wine &amp; Spirits</item>
+    </string-array>
+
+    <string-array name="grocery_store_chains">
+        <item>Albertsons</item>
+        <item>Fred Meyer</item>
+        <item>Haggen</item>
+        <item>PCC</item>
+        <item>QFC</item>
+        <item>Safeway</item>
+        <item>Top Foods</item>
+        <item>Trader Joe’s</item>
+        <item>Whole Foods</item>
+        <item>Winco</item>
+    </string-array>
+
+    <string-array name="grocery_items">
+        <item>Aleve, 21</item>
+        <item>Almonds, 12</item>
+        <item>Ammonia, 10</item>
+        <item>Angel Hair Pasta, 17</item>
+        <item>Apple Cider Vinegar, 11</item>
+        <item>Apples, 23</item>
+        <item>Apricot Ale, 5</item>
+        <item>Aspirin, 21</item>
+        <item>Avocado, 23</item>
+        <item>Baby Bottles, 2</item>
+        <item>Baby Food, 2</item>
+        <item>Baby Formula, 2</item>
+        <item>Baby Wipes, 2</item>
+        <item>BabyDiapers, 2</item>
+        <item>Bacon, 19</item>
+        <item>Baked Beans, 9</item>
+        <item>Baking Powder, 11</item>
+        <item>Baking Soda, 11</item>
+        <item>Balsamic Vinegar, 11</item>
+        <item>Bananas, 23</item>
+        <item>Bath Soap, 21</item>
+        <item>Bathroom Cleaner, 10</item>
+        <item>Beer, 5</item>
+        <item>Berries - frozen, 16</item>
+        <item>Black Olives, 9</item>
+        <item>Bleach, 10</item>
+        <item>Blue Cheese, 13</item>
+        <item>Blue Moon, 5</item>
+        <item>Blueberries, 23</item>
+        <item>Bourbon, 24</item>
+        <item>Branflakes, 8</item>
+        <item>Bread - fresh, 3</item>
+        <item>Bread, 7</item>
+        <item>Breakfast Bars, 8</item>
+        <item>Broccoli, 23</item>
+        <item>Brownie Mixes, 4</item>
+        <item>Budweiser, 5</item>
+        <item>Buttermilk, 13</item>
+        <item>Butternut Squash, 23</item>
+        <item>Cabbage, 23</item>
+        <item>Cake Mixes, 4</item>
+        <item>Cakes, 3</item>
+        <item>Candy, 12</item>
+        <item>Carrots, 23</item>
+        <item>Cat Food, 22</item>
+        <item>Cat Litter, 22</item>
+        <item>Cat Treats, 22</item>
+        <item>Catsup, 11</item>
+        <item>Cereal, 8</item>
+        <item>Cheese, 13</item>
+        <item>Chicken Breasts, 19</item>
+        <item>Chicken Broth, 9</item>
+        <item>Chicken Thighs, 19</item>
+        <item>Chicken, 19</item>
+        <item>Chips, 12</item>
+        <item>Clif Bars, 8</item>
+        <item>Coca-Cola, 6</item>
+        <item>Coffee Filters, 20</item>
+        <item>Coffee, 6</item>
+        <item>Cold &amp; Flu Medicines, 21</item>
+        <item>Cookies - fresh, 3</item>
+        <item>Corn - frozen, 16</item>
+        <item>Corn-canned, 9</item>
+        <item>Cornflakes, 8</item>
+        <item>Corn-fresh, 23</item>
+        <item>Cottage Cheese, 13</item>
+        <item>Crab, 19</item>
+        <item>Crackers, 12</item>
+        <item>Cream Cheese, 13</item>
+        <item>Cream of Mushroom Soup, 9</item>
+        <item>Deli Bacon, 14</item>
+        <item>Deli Cheese, 14</item>
+        <item>Deli Ham, 14</item>
+        <item>Deli Meats, 14</item>
+        <item>Deli Turkey, 14</item>
+        <item>Deodorant, 21</item>
+        <item>Dinners - frozen, 16</item>
+        <item>Dish Soap, 10</item>
+        <item>Distilled Water, 6</item>
+        <item>Dog Biscuits, 22</item>
+        <item>Dog Food, 22</item>
+        <item>Dog Treats, 22</item>
+        <item>Donuts, 3</item>
+        <item>Doritos, 12</item>
+        <item>Eggs, 13</item>
+        <item>Enchilada Sauce, 18</item>
+        <item>Energy Drink, 6</item>
+        <item>English Muffins, 7</item>
+        <item>Fat Tire, 5</item>
+        <item>Feta, 13</item>
+        <item>Fig Newtons, 12</item>
+        <item>Flour, 4</item>
+        <item>Flowers, 15</item>
+        <item>Foot Powder, 21</item>
+        <item>Garlic, 23</item>
+        <item>Gin, 24</item>
+        <item>Ginger Ale, 6</item>
+        <item>Grapefruit, 23</item>
+        <item>Grapes, 23</item>
+        <item>Green Beans - canned, 9</item>
+        <item>Green Beans - fresh, 23</item>
+        <item>Green Beans - frozen, 16</item>
+        <item>Green Olives, 11</item>
+        <item>Ground Beef, 19</item>
+        <item>Ground Turkey, 19</item>
+        <item>Guinness, 5</item>
+        <item>Gum, 12</item>
+        <item>Hamburger Buns, 7</item>
+        <item>Hamburger, 19</item>
+        <item>Hand Soap, 10</item>
+        <item>Hash Browns - frozen, 16</item>
+        <item>Honey, 11</item>
+        <item>Hotdog Buns, 7</item>
+        <item>Hummus, 14</item>
+        <item>Ice Cream, 16</item>
+        <item>Instant Breakfast, 8</item>
+        <item>Jerky, 12</item>
+        <item>Juice - frozen, 16</item>
+        <item>Juices, 6</item>
+        <item>Kleenex, 20</item>
+        <item>Laundry Detergent, 10</item>
+        <item>Laundry Soap, 10</item>
+        <item>Lemons, 23</item>
+        <item>Lettuce, 23</item>
+        <item>Lima Beans - frozen, 16</item>
+        <item>Limes, 23</item>
+        <item>Macaroni, 17</item>
+        <item>Makeup, 21</item>
+        <item>Manicotti Noodles, 17</item>
+        <item>Marinara Sauce, 17</item>
+        <item>Masa\'s Curry Sauce, 18</item>
+        <item>Mayonnaise, 11</item>
+        <item>Meals - frozen, 16</item>
+        <item>Melons, 23</item>
+        <item>Mexican Rice, 17</item>
+        <item>Milk, 13</item>
+        <item>Miller Lite, 5</item>
+        <item>Mints, 12</item>
+        <item>Mouthwash, 21</item>
+        <item>Mozzarella, 13</item>
+        <item>Mustard, 11</item>
+        <item>Napkins, 20</item>
+        <item>Noodles, 17</item>
+        <item>Nuts, 12</item>
+        <item>Oatmeal, 8</item>
+        <item>Olive Oil, 11</item>
+        <item>Onions, 23</item>
+        <item>Orange Juice-fresh, 6</item>
+        <item>Orange Juice-frozen, 16</item>
+        <item>Oranges, 23</item>
+        <item>Oreo Cookies, 12</item>
+        <item>Paper Bowls, 20</item>
+        <item>Paper Cups, 20</item>
+        <item>Paper Plates, 20</item>
+        <item>Paper Towels, 20</item>
+        <item>Parmesan Cheese, 13</item>
+        <item>Parsley, 23</item>
+        <item>Pasta Sauce, 17</item>
+        <item>Peanut Butter, 11</item>
+        <item>Peanuts, 12</item>
+        <item>Peas - frozen, 16</item>
+        <item>Pepsi, 6</item>
+        <item>Pickles, 11</item>
+        <item>Pies, 3</item>
+        <item>Pineapple - canned, 9</item>
+        <item>Pineapple - fresh, 23</item>
+        <item>Pizza - frozen, 16</item>
+        <item>Popcorn, 12</item>
+        <item>Pork Chops, 19</item>
+        <item>Pork Tenderloin, 19</item>
+        <item>Potato Chips, 12</item>
+        <item>Potatoes - frozen, 16</item>
+        <item>Potatoes, 23</item>
+        <item>Pretzels, 12</item>
+        <item>Raisin bran, 8</item>
+        <item>Relish, 11</item>
+        <item>Rhubarb, 23</item>
+        <item>Rice, 17</item>
+        <item>Root Beer, 6</item>
+        <item>Salt, 4</item>
+        <item>Scotch, 24</item>
+        <item>Shampoo, 21</item>
+        <item>Shrimp - frozen, 16</item>
+        <item>Shrimp, 19</item>
+        <item>Soda Pop, 6</item>
+        <item>Soup, 9</item>
+        <item>Sour Cream, 13</item>
+        <item>Spaghetti, 17</item>
+        <item>Spanish Rice, 17</item>
+        <item>Spinach - fresh, 23</item>
+        <item>Spinach - frozen, 16</item>
+        <item>Steaks, 19</item>
+        <item>Stella Artois, 5</item>
+        <item>Stone IPA, 5</item>
+        <item>Strawberries - fresh, 23</item>
+        <item>Straws, 20</item>
+        <item>String Cheese, 13</item>
+        <item>Sugar, 4</item>
+        <item>Syrup, 11</item>
+        <item>Taco Chips, 12</item>
+        <item>Taco Mix, 11</item>
+        <item>Taco Sauce, 11</item>
+        <item>Taco Shells, 18</item>
+        <item>Tampax, 21</item>
+        <item>Tea, 6</item>
+        <item>Toilet Paper, 20</item>
+        <item>Tomato Soup, 9</item>
+        <item>Tomatoes, 23</item>
+        <item>Toothbrush, 21</item>
+        <item>Toothpaste, 21</item>
+        <item>Tortillas, 18</item>
+        <item>Tuna Fish - canned, 9</item>
+        <item>Tuna Fish - fresh, 19</item>
+        <item>Vanilla, 11</item>
+        <item>Vegetables - frozen, 16</item>
+        <item>Vinegar, 11</item>
+        <item>Vodka, 24</item>
+        <item>White Rice, 17</item>
+        <item>Wild Rice, 17</item>
+        <item>Wine, 24</item>
+        <item>Yeast, 4</item>
+        <item>Yogurt - frozen, 16</item>
+        <item>Yogurt, 13</item>
+
+    </string-array>
+
+    <!--    <string-array name="grocery_stores">
+        <item>A &amp; P Food Stores</item>
+        <item>Albertsons</item>
+        <item>ALDI</item>
+        <item>Basic American Foods</item>
+        <item>Boardman Foods</item>
+        <item>Broussards Supermarket Inc</item>
+        <item>Bybee Foods LLC</item>
+        <item>City Market</item>
+        <item>Daybreak Foods</item>
+        <item>Eastern Foods</item>
+        <item>Fiesta Foods</item>
+        <item>Food 4 Less</item>
+        <item>Food Emporium</item>
+        <item>Food Lion</item>
+        <item>Fred Meyer</item>
+        <item>Friendly Foods</item>
+        <item>Gruma Mission Foods</item>
+        <item>Haggen Food &amp; Pharmacy</item>
+        <item>Harvest Foods</item>
+        <item>Healthway Natural Foods</item>
+        <item>HEB</item>
+        <item>Hometown Foods</item>
+        <item>Houghton Market</item>
+        <item>Jerome Foods</item>
+        <item>Jumbo Foods</item>
+        <item>Kroger</item>
+        <item>Market Basket</item>
+        <item>Metal Supermarkets</item>
+        <item>Piggly Wiggly</item>
+        <item>PCC Natural Markets</item>
+        <item>Publix</item>
+        <item>Qfc Quality Food Centers</item>
+        <item>Resers Fine Foods</item>
+        <item>Rosauers Supermarket</item>
+        <item>Safeway</item>
+        <item>Save A Lot</item>
+        <item>Schreiber Food Inc.</item>
+        <item>Schwan's Fine Food</item>
+        <item>Seneca Foods</item>
+        <item>Stop &amp; Shop</item>
+        <item>Super 1 Foods</item>
+        <item>Super One Foods</item>
+        <item>Supervalu</item>
+        <item>Twin City Foods</item>
+        <item>Vons</item>
+        <item>Wawa Food Markets</item>
+        <item>Westfarm Foods</item>
+        <item>Whole Foods Market</item>
+        <item>Winco</item>
+        <item>Winn Dixie</item>
+    </string-array>-->
+
+</resources>

@@ -1,0 +1,35 @@
+<resources>
+
+    <string-array name="navigation_drawer_titles">
+        <item>Shopping list</item>
+        <item>Store lists</item>
+        <item>Master list</item>
+        <item>List by groups</item>
+        <item>Cull master list</item>
+        <item>Select stores</item>
+        <item>Map store</item>
+        <item>Settings</item>
+    </string-array>
+
+    <string name="app_name">"A1GroceryList"</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="btnOk_text">Ok</string>
+    <string name="btnCancel_text">Cancel</string>
+    <string name="product_name_not_available">"Name N/A: "</string>
+    <string name="invalid_gtin">. Invalid GTIN (UPC, EAN, or ISBN) barcode number.</string>
+    <string name="scan_resutls_title">Scan Results</string>
+    <string name="error_no_available_information">Error: No available information!</string>
+    <string name="key_word_title">"Key word: "</string>
+    <string name="location_group_title">"Location group: "</string>
+    <string name="dropbox_default_path">No Folder Selected</string>
+    <string name="txtItemName_hint">Item Name</string>
+    <string name="txtItemNote_hint">Note</string>
+    <string name="edit_item_dialog_title">Edit Item</string>
+    <string name="sortListDialog_title">Sort List</string>
+    <string name="notification_downloading_title">A1 Grocery List</string>
+    <string name="notification_downloading_text">Downloading data from the cloud.</string>
+    <string name="notification_download_ticker">A1 Ticker</string>
+    <string name="btnDelete_text">Delete</string>
+</resources>

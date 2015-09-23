@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rowLinearLayout"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/rec_genoa_no_stroke">
+
+    <include layout="@layout/row_items_separator" />
+
+    <TextView
+        android:id="@+id/tvSelectedItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ItemListRow"
+        android:visibility="visible"
+        android:text="Item Name (Item Note)"/>
+
+</LinearLayout>

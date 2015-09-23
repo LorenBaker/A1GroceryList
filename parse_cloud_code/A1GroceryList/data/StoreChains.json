@@ -1,0 +1,222 @@
+{ "results": [
+	{
+        "ACL": {
+            "*": {
+                "read": true,
+                "write": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:48.426Z",
+        "objectId": "dXNYimBRKp",
+        "sortKey": 1,
+        "storeChainName": "Albertsons",
+        "updatedAt": "2015-07-24T03:42:48.426Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true,
+                "write": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:49.028Z",
+        "objectId": "eBup54t1c7",
+        "sortKey": 2,
+        "storeChainName": "Fred Meyer",
+        "updatedAt": "2015-07-24T03:42:49.028Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true,
+                "write": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:49.242Z",
+        "objectId": "Thwuc7aoq1",
+        "sortKey": 3,
+        "storeChainName": "Haggen",
+        "updatedAt": "2015-07-24T03:42:49.242Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true,
+                "write": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:49.454Z",
+        "objectId": "ToOwTIuEQP",
+        "sortKey": 4,
+        "storeChainName": "PCC",
+        "updatedAt": "2015-07-24T03:42:49.454Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true,
+                "write": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:49.731Z",
+        "objectId": "WudhGhd0vd",
+        "sortKey": 5,
+        "storeChainName": "QFC",
+        "updatedAt": "2015-07-24T03:42:49.731Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true,
+                "write": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:49.895Z",
+        "objectId": "VUu9XxPwQM",
+        "sortKey": 6,
+        "storeChainName": "Safeway",
+        "updatedAt": "2015-07-24T03:42:49.895Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true,
+                "write": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:50.040Z",
+        "objectId": "1devozHdXY",
+        "sortKey": 7,
+        "storeChainName": "Top Foods",
+        "updatedAt": "2015-07-24T03:42:50.040Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true,
+                "write": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:50.223Z",
+        "objectId": "2yuAutfBuo",
+        "sortKey": 8,
+        "storeChainName": "Trader Joe’s",
+        "updatedAt": "2015-07-24T03:42:50.223Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true,
+                "write": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:50.423Z",
+        "objectId": "xLqBGxVVxl",
+        "sortKey": 9,
+        "storeChainName": "Whole Foods",
+        "updatedAt": "2015-07-24T03:42:50.423Z"
+    },
+	{
+        "ACL": {
+            "*": {
+                "read": true,
+                "write": true
+            },
+            "va0TTGwOk7": {
+                "read": true,
+                "write": true
+            }
+        },
+        "author": {
+            "__type": "Pointer",
+            "className": "_User",
+            "objectId": "va0TTGwOk7"
+        },
+        "createdAt": "2015-07-24T03:42:50.561Z",
+        "objectId": "zJBrrNtS79",
+        "sortKey": 10,
+        "storeChainName": "Winco",
+        "updatedAt": "2015-07-24T03:42:50.561Z"
+    }
+] }

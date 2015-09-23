@@ -1,0 +1,3 @@
+include ':app', ':ParseLoginUI', ':core', ':'
+project(':ParseLoginUI').projectDir = new File('app/libraries/ParseLoginUI')
+project(':core').projectDir = new File('app/libraries/core')

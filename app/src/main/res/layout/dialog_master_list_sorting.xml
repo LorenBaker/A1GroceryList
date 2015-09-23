@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <RadioGroup
+        android:id="@+id/radioGroupSortStore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/rbAlphabetical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Alphabetical" />
+
+        <RadioButton
+            android:id="@+id/rbReverseAlphabetical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Reverse Alphabetical" />
+
+        <RadioButton
+            android:id="@+id/rbFavoritesFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favorites first" />
+
+        <RadioButton
+            android:id="@+id/rbDateUpdated"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date Updated" />
+
+        <RadioButton
+            android:id="@+id/rbManual"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manual" />
+
+        <RadioButton
+            android:id="@+id/rbSelectedFirst"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Selected first" />
+    </RadioGroup>
+
+</LinearLayout>

@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+
+    <item
+        android:id="@+id/action_show_items"
+        android:title="Show items"
+        android:orderInCategory="101"
+        android:checkable="true"
+        android:checked="false"
+        android:showAsAction="never" />
+
+</menu>

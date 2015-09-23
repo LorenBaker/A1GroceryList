@@ -1,0 +1,46 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+
+    <item
+        android:id="@+id/action_delete_checked_items"
+        android:title="Delete checked items"
+        android:icon="@drawable/ic_action_discard"
+        android:orderInCategory="101"
+        android:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_clear_all_check_marks"
+        android:title="Clear all check marks"
+        android:orderInCategory="102"
+        android:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_check_all"
+        android:title="Check all"
+        android:orderInCategory="103"
+        android:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_check_90_days"
+        android:title="Check unused over 90 days"
+        android:orderInCategory="110"
+        android:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_check_180_days"
+        android:title="Check unused over 180 days"
+        android:orderInCategory="120"
+        android:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_check_365_days"
+        android:title="Check unused over 1 year"
+        android:orderInCategory="130"
+        android:showAsAction="never" />
+
+
+
+</menu>
