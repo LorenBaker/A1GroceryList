@@ -10,7 +10,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
 
 import com.lbconsulting.a1grocerylist.R;
 import com.lbconsulting.a1grocerylist.adapters.MapStoreArrayAdapter;
@@ -20,7 +19,6 @@ import com.lbconsulting.a1grocerylist.classes.MySettings;
 import com.lbconsulting.a1grocerylist.database.Store;
 import com.lbconsulting.a1grocerylist.database.StoreMapEntry;
 import com.lbconsulting.a1grocerylist.dialogs.dialogGroupLocation;
-import com.lbconsulting.a1grocerylist.dialogs.dialogSelectStore;
 import com.lbconsulting.a1grocerylist.loaders.MapStoreLoader;
 
 import java.util.List;
@@ -32,52 +30,33 @@ import de.greenrobot.event.EventBus;
  */
 public class fragMapStore extends Fragment implements LoaderManager.LoaderCallbacks<List<StoreMapEntry>> {
 
-    private final String ARG_STORE_ID = "storeID";
-    private ListView lvGroups;
+    private static final String ARG_STORE_ID = "storeID";
     private MapStoreArrayAdapter mAdapter;
-    //    private Store mStore;
     private String mStoreID;
+    private Store mStore;
 
-    // ItemsByGroupLoader
-    private LoaderManager.LoaderCallbacks<List<StoreMapEntry>> mLoaderCallbacks;
-    private LoaderManager mLoaderManager = null;
-    private final int STORE_MAP_ENTRY_LOADER_ID = 4;
     private MapStoreLoader mMapStoreLoader;
 
     public fragMapStore() {
         // Required empty public constructor
     }
 
-    public static fragMapStore newInstance() {
+    public static fragMapStore newInstance(String storeID) {
         MyLog.i("fragMapStore", "newInstance");
-        return new fragMapStore();
+        fragMapStore fragment = new fragMapStore();
+        Bundle args = new Bundle();
+        args.putString(ARG_STORE_ID, storeID);
+        fragment.setArguments(args);
+        return fragment;
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         MyLog.i("fragMapStore", "onCreate");
+        mStoreID = getArguments().getString(ARG_STORE_ID);
+        mStore = Store.getStore(mStoreID);
         EventBus.getDefault().register(this);
-//        setHasOptionsMenu(true);
-    }
-
-    public void onEvent(MyEvents.selectedStore event) {
-        mStoreID = event.getSelectedStoreID();
-        setStore(event.getSelectedStoreID());
-    }
-
-    private void setStore(String selectedStoreID) {
-        mStoreID = selectedStoreID;
-        Store store = Store.getStore(selectedStoreID);
-        if (store != null) {
-            String title = store.getStoreChainAndRegionalName();
-            EventBus.getDefault().post(new MyEvents.setActionBarTitle(title));
-            mMapStoreLoader.setStore(store);
-            mLoaderManager.restartLoader(STORE_MAP_ENTRY_LOADER_ID, null, mLoaderCallbacks);
-//            mAdapter.notifyDataSetChanged();
-
-//            mAdapter.setMappingMode(true, mStore);
-        }
     }
 
     public void onEvent(MyEvents.updateUI event) {
@@ -100,12 +79,12 @@ public class fragMapStore extends Fragment implements LoaderManager.LoaderCallba
         MyLog.i("fragMapStore", "onCreateView: ");
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.frag_store_list_by_group, container, false);
-        lvGroups = (ListView) rootView.findViewById(R.id.lvStoreItems);
+        ListView lvGroups = (ListView) rootView.findViewById(R.id.lvStoreItems);
         lvGroups.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                TextView tv = (TextView) parent.findViewById(R.id.tvGroup);
-                final StoreMapEntry clickedEntry = (StoreMapEntry) tv.getTag();
+                final StoreMapEntry clickedEntry = mAdapter.getItem(position);
+
                 if (clickedEntry != null) {
                     FragmentManager fm = getFragmentManager();
                     dialogGroupLocation dialog = dialogGroupLocation.newInstance(
@@ -132,19 +111,14 @@ public class fragMapStore extends Fragment implements LoaderManager.LoaderCallba
 
         if (savedInstanceState != null) {
             mStoreID = savedInstanceState.getString(ARG_STORE_ID);
-        } else {
-            mStoreID = MySettings.getStoreIDtoMap();
+            mStore = Store.getStore(mStoreID);
         }
 
-//        getActivity().invalidateOptionsMenu();
-
-//        mStore = null;
         EventBus.getDefault().post(new MyEvents.setBackgroundColor(MySettings.BACKGROUND_COLOR_OPAL));
 
         // setup the Items Loader
-        mLoaderCallbacks = this;
-        mLoaderManager = getLoaderManager();
-        mLoaderManager.initLoader(STORE_MAP_ENTRY_LOADER_ID, null, mLoaderCallbacks);
+        final int STORE_MAP_ENTRY_LOADER_ID = 4;
+        getLoaderManager().initLoader(STORE_MAP_ENTRY_LOADER_ID, null, this);
     }
 
 
@@ -175,16 +149,9 @@ public class fragMapStore extends Fragment implements LoaderManager.LoaderCallba
         super.onResume();
         MyLog.i("fragMapStore", "onResume: ");
         MySettings.setActiveFragmentID(MySettings.FRAG_MAP_STORE);
-
-        mStoreID = MySettings.getStoreIDtoMap();
-        if (mStoreID.equals(MySettings.NOT_AVAILABLE)) {
-            FragmentManager fm = getActivity().getFragmentManager();
-            dialogSelectStore dialog = dialogSelectStore.newInstance();
-            dialog.show(fm, "dialogSelectStore");
-        } else {
-            setStore(mStoreID);
+        if (mStore != null) {
+            EventBus.getDefault().post(new MyEvents.setActionBarTitle(mStore.getStoreChainAndRegionalName()));
         }
-
     }
 
     @Override
@@ -201,43 +168,6 @@ public class fragMapStore extends Fragment implements LoaderManager.LoaderCallba
         MyLog.i("fragMapStore", "onDestroy: ");
         EventBus.getDefault().unregister(this);
     }
-
-//    @Override
-//    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
-//        MyLog.i("fragMapStore", "onCreateOptionsMenu");
-//        super.onCreateOptionsMenu(menu, inflater);
-//        inflater.inflate(R.menu.menu_frag_map_store, menu);
-//    }
-//
-//    @Override
-//    public void onPrepareOptionsMenu(Menu menu) {
-//        super.onPrepareOptionsMenu(menu);
-//        MyLog.i("fragMapStore", "onPrepareOptionsMenu");
-//        MenuItem showItems = menu.findItem(R.id.action_show_items);
-////        mAdapter.setShowItems(showItems.isChecked());
-//        updateUI();
-//    }
-//
-//    @Override
-//    public boolean onOptionsItemSelected(MenuItem item) {
-//        switch (item.getItemId()) {
-//
-//            case R.id.action_show_items:
-//                if (item.isChecked()) {
-//                    item.setChecked(false);
-//                } else {
-//                    item.setChecked(true);
-//                }
-//
-////                mAdapter.setShowItems(item.isChecked());
-//                updateUI();
-//                break;
-//
-//            default:
-//                return false;
-//        }
-//        return true;
-//    }
 
     @Override
     public Loader<List<StoreMapEntry>> onCreateLoader(int id, Bundle args) {

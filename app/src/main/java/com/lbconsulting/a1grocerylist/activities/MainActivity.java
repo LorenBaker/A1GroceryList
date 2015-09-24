@@ -38,6 +38,7 @@ import com.lbconsulting.a1grocerylist.classes.MyLog;
 import com.lbconsulting.a1grocerylist.classes.MySettings;
 import com.lbconsulting.a1grocerylist.database.Item;
 import com.lbconsulting.a1grocerylist.dialogs.dialogEditItem;
+import com.lbconsulting.a1grocerylist.dialogs.dialogSelectStore;
 import com.lbconsulting.a1grocerylist.dialogs.dialogShoppingListSorting;
 import com.lbconsulting.a1grocerylist.fragments.fragCullItems;
 import com.lbconsulting.a1grocerylist.fragments.fragEditNewStore;
@@ -385,29 +386,35 @@ public class MainActivity extends Activity implements DrawerLayout.DrawerListene
 
             case MySettings.FRAG_SHOW_ALL_STORES:
                 MyLog.i("MainActivity", "showFragment: " + MySettings.getFragmentTag(MySettings.FRAG_SHOW_ALL_STORES));
-                if(A1Utils.isNetworkAvailable(this)) {
+                if (A1Utils.isNetworkAvailable(this)) {
                     fm.beginTransaction()
                             .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
                             .replace(R.id.fragment_container,
                                     fragStoreListByStateCity.newInstance(),
                                     MySettings.getFragmentTag(MySettings.FRAG_SHOW_ALL_STORES))
                             .commit();
-                }else {
+                } else {
                     mFragmentBackstack.pop();
                     String title = "Unable to show stores";
                     String msg = "Unable to retrieve stores. No internet connection available.";
-                    showOkDialog(this,title,msg);
+                    showOkDialog(this, title, msg);
                 }
                 break;
 
             case MySettings.FRAG_MAP_STORE:
                 MyLog.i("MainActivity", "showFragment: " + MySettings.getFragmentTag(MySettings.FRAG_MAP_STORE));
-                fm.beginTransaction()
-                        .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
-                        .replace(R.id.fragment_container,
-                                fragMapStore.newInstance(),
-                                MySettings.getFragmentTag(MySettings.FRAG_MAP_STORE))
-                        .commit();
+                String storeID = MySettings.getStoreIDtoMap();
+                if (storeID.equals(MySettings.NOT_AVAILABLE)) {
+                    dialogSelectStore dialog = dialogSelectStore.newInstance();
+                    dialog.show(fm, "dialogSelectStore");
+                } else {
+                    fm.beginTransaction()
+                            .setTransition(FragmentTransaction.TRANSIT_FRAGMENT_FADE)
+                            .replace(R.id.fragment_container,
+                                    fragMapStore.newInstance(storeID),
+                                    MySettings.getFragmentTag(MySettings.FRAG_MAP_STORE))
+                            .commit();
+                }
                 break;
 
 

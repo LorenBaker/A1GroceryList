@@ -13,6 +13,7 @@ import android.widget.ListView;
 import com.lbconsulting.a1grocerylist.R;
 import com.lbconsulting.a1grocerylist.classes.MyEvents;
 import com.lbconsulting.a1grocerylist.classes.MyLog;
+import com.lbconsulting.a1grocerylist.classes.MySettings;
 import com.lbconsulting.a1grocerylist.database.Store;
 
 import java.util.List;
@@ -65,7 +66,8 @@ public class dialogSelectStore extends DialogFragment {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Store store = (Store) adapter.getItem(position);
-                EventBus.getDefault().post(new MyEvents.selectedStore(store.getStoreID()));
+                MySettings.setStoreIDtoMapID(store.getStoreID());
+                EventBus.getDefault().post(new MyEvents.showFragment(MySettings.FRAG_MAP_STORE));
                 dismiss();
             }
         });

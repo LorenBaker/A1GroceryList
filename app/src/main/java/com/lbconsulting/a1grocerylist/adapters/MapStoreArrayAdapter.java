@@ -83,10 +83,10 @@ public class MapStoreArrayAdapter extends ArrayAdapter<StoreMapEntry> {
             holder = (MapStoreHolder) convertView.getTag();
         }
 
-        String group = entry.getGroup().getGroupName();
+        String groupName = entry.getGroup().getGroupName();
         String location = entry.getLocation().getLocationName();
-        holder.tvGroup.setText(group);
-        holder.tvGroup.setTag(entry);
+        holder.tvGroup.setText(groupName);
+//        holder.tvGroup.setTag(entry);
 
         holder.tvLocation.setText(location);
         if(location.startsWith("[")){
