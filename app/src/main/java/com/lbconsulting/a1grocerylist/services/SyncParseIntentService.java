@@ -36,12 +36,7 @@ import de.greenrobot.event.EventBus;
  */
 public class SyncParseIntentService extends IntentService {
 
-    private boolean mSeekingNetwork = true;
-    private int mFastInterval;
-    private int mSlowInterval;
-    private int INTERVAL;
     private int mNumberOfSleepIntervals;
-    private int mMaxNumberOfFastSleepIntervals;
 
     private int mAction;
     private String mActionString;
@@ -65,59 +60,77 @@ public class SyncParseIntentService extends IntentService {
     @Override
     protected void onHandleIntent(Intent intent) {
 
-        MyLog.i("SyncParseIntentService", "STARTED.");
-
         Bundle extras = intent.getExtras();
         if (extras == null) {
             mUserLatitude = MySettings.LATITUDE_NA;
             mUserLongitude = MySettings.LONGITUDE_NA;
+            MyLog.i("SyncParseIntentService", "STARTED: Latitude and Longitude not found!");
         } else {
             mAction = extras.getInt(MySettings.ARG_UPLOAD_DOWNLOAD_ACTION);
             mUserLatitude = extras.getDouble(MySettings.ARG_USER_LATITUDE);
             mUserLongitude = extras.getDouble(MySettings.ARG_USER_LONGITUDE);
+            switch (mAction) {
+                case MySettings.ACTION_DOWNLOAD_ONLY:
+                    mActionString = "ACTION_DOWNLOAD_ONLY";
+                    break;
+
+                case MySettings.ACTION_UPLOAD_ONLY:
+                    mActionString = "ACTION_UPLOAD_ONLY";
+                    break;
+
+                case MySettings.ACTION_UPLOAD_AND_DOWNLOAD:
+                    mActionString = "ACTION_UPLOAD_AND_DOWNLOAD";
+                    break;
+
+                case MySettings.ACTION_DOWNLOAD_STORES:
+                    mActionString = "ACTION_DOWNLOAD_STORES";
+                    break;
+            }
+            MyLog.i("SyncParseIntentService", "STARTED: " + mActionString);
         }
 
-        mSeekingNetwork = true;
+        boolean seekingNetwork = true;
         mDownloadNotificationShowing = false;
 
-        mFastInterval = MySettings.INTERVAL_FAST; // 30 seconds
-        mSlowInterval = MySettings.INTERVAL_SLOW; // 15 minutes
-        mMaxNumberOfFastSleepIntervals = MySettings.MAX_NUMBER_OF_FAST_SLEEP_INTERVALS; // 60
+        int fastInterval = MySettings.INTERVAL_FAST;
+        int slowInterval = MySettings.INTERVAL_SLOW;
+        int maxNumberOfFastSleepIntervals = MySettings.MAX_NUMBER_OF_FAST_SLEEP_INTERVALS;
 
-        if (mSlowInterval < mFastInterval) {
-            mSlowInterval = 30 * mFastInterval;
+        if (slowInterval < fastInterval) {
+            slowInterval = 30 * fastInterval;
         }
 
-        INTERVAL = mFastInterval;
+        int INTERVAL = fastInterval;
         long startTime = 0;
-        while (mSeekingNetwork) {
+        while (seekingNetwork) {
             if (A1Utils.isNetworkAvailable(this)) {
                 startTime = System.currentTimeMillis();
-                mSeekingNetwork = false;
+                seekingNetwork = false;
                 switch (mAction) {
                     case MySettings.ACTION_DOWNLOAD_ONLY:
-                        mActionString = "ACTION_DOWNLOAD_ONLY";
                         downloadTablesToLocalDatastore();
                         break;
 
                     case MySettings.ACTION_UPLOAD_ONLY:
-                        mActionString = "ACTION_UPLOAD_ONLY";
                         uploadDirtyParseObjects();
                         break;
 
                     case MySettings.ACTION_UPLOAD_AND_DOWNLOAD:
-                        mActionString = "ACTION_UPLOAD_AND_DOWNLOAD";
                         uploadDirtyParseObjects();
                         downloadTablesToLocalDatastore();
+                        break;
+
+                    case MySettings.ACTION_DOWNLOAD_STORES:
+                        downloadStoresToLocalDatastore();
                         break;
                 }
 
             } else {
                 try {
                     mNumberOfSleepIntervals++;
-                    if (mNumberOfSleepIntervals > mMaxNumberOfFastSleepIntervals) {
+                    if (mNumberOfSleepIntervals > maxNumberOfFastSleepIntervals) {
                         // The network has not been available for a long time ... increase the sleep interval
-                        INTERVAL = mSlowInterval;
+                        INTERVAL = slowInterval;
                     }
                     MyLog.i("SyncParseIntentService", mNumberOfSleepIntervals + " SLEEPING " + INTERVAL / 1000 + " seconds.");
                     Thread.sleep(INTERVAL);
@@ -130,20 +143,13 @@ public class SyncParseIntentService extends IntentService {
         long endTime = System.currentTimeMillis();
         long elapsedTimeMills = endTime - startTime;
         double elapsedTimeSeconds = elapsedTimeMills / 1000.0;
-        String msg = String.format("Overall sync elapsed time =  %.2f", elapsedTimeSeconds) + " seconds. " + mActionString + " DONE";
+        String msg = String.format( "Sync elapsed time =  %.2f", elapsedTimeSeconds) + " seconds. " + mActionString + " DONE";
         MyLog.d("SyncParseIntentService", msg);
     }
 
     private void uploadDirtyParseObjects() {
-        long startTime = System.currentTimeMillis();
-        // TODO: Implement uploading of all dirty Parse objects
+        // TODO: Implement uploading of all dirty Parse objects ???
         uploadDirtyItemsToParse();
-
-        long endTime = System.currentTimeMillis();
-        long elapsedTimeMills = endTime - startTime;
-        double elapsedTimeSeconds = elapsedTimeMills / 1000.0;
-        String msg = String.format("Upload dirty objects elapsed time =  %.2f", elapsedTimeSeconds) + " seconds.";
-        MyLog.i("SyncParseIntentService", msg);
     }
 
     private void uploadDirtyItemsToParse() {
@@ -183,14 +189,11 @@ public class SyncParseIntentService extends IntentService {
 
     //region Download Tables From Parse
     private void downloadTablesToLocalDatastore() {
-        long startTime = System.currentTimeMillis();
-
         showDownLoadNotification();
 
         downloadGroupsFromParse();
         downloadLocationsFromParse();
         downloadStoreChainsFromParse();
-        downloadStoresFromParse();
         downloadItemsFromParse();
 
         // downloads done
@@ -198,24 +201,22 @@ public class SyncParseIntentService extends IntentService {
 
         EventBus.getDefault().post(new MyEvents.updateUI(null));
         cancelDownLoadNotification();
+    }
 
-        long endTime = System.currentTimeMillis();
-        long elapsedTimeMills = endTime - startTime;
-        double elapsedTimeSeconds = elapsedTimeMills / 1000.0;
-        String msg = String.format("Download tables elapsed time =  %.2f", elapsedTimeSeconds) + " seconds.";
-        MyLog.i("SyncParseIntentService", msg);
+    private void downloadStoresToLocalDatastore() {
+        showDownLoadNotification();
+
+        downloadStoresFromParse();
+
+        // downloads done
+        pinStoreData();
+        cancelDownLoadNotification();
     }
 
     private void pinDownloadedData() {
         MyLog.i("SyncParseIntentService", "pinDownloadedData");
         try {
-            unpinEverything();
-
-            if (mListOfStoreMaps != null && mListOfStoreMaps.size() > 0) {
-                for (List<StoreMapEntry> storeMap : mListOfStoreMaps) {
-                    ParseObject.pinAll( storeMap);
-                }
-            }
+            unpinOldData();
 
             if (mItemList != null && mItemList.size() > 0) {
                 ParseObject.pinAll(mItemList);
@@ -234,27 +235,43 @@ public class SyncParseIntentService extends IntentService {
                 ParseObject.pinAll(mStoreChainList);
             }
 
+        } catch (ParseException e) {
+            MyLog.e("SyncParseIntentService", "pinDownloadedData: ParseException" + e.getMessage());
+        }
+    }
+
+
+    private void unpinOldData() {
+        Item.unPinAll();
+        Group.unPinAll();
+        Location.unPinAll();
+        StoreChain.unPinAll();
+    }
+
+
+    private void pinStoreData() {
+        MyLog.i("SyncParseIntentService", "pinDownloadedData");
+        try {
+            unpinStoresData();
+
+            if (mListOfStoreMaps != null && mListOfStoreMaps.size() > 0) {
+                for (List<StoreMapEntry> storeMap : mListOfStoreMaps) {
+                    ParseObject.pinAll( storeMap);
+                }
+            }
+
             if (mStoreList != null && mStoreList.size() > 0) {
                 ParseObject.pinAll( mStoreList);
             }
 
 
         } catch (ParseException e) {
-            MyLog.e("SyncParseIntentService", "pinDownloadedData: ParseException" + e.getMessage());
+            MyLog.e("SyncParseIntentService", "pinStoreData: ParseException" + e.getMessage());
         }
     }
-
-    private void unpinEverything() {
-        try {
-            StoreMapEntry.unpinAll();
-            Item.unpinAll();
-            Group.unpinAll();
-            Location.unpinAll();
-            StoreChain.unpinAll();
-            Store.unpinAll();
-        } catch (ParseException e) {
-            MyLog.e("SyncParseIntentService", "unpinEverything: ParseException" + e.getMessage());
-        }
+    private void unpinStoresData() {
+        StoreMapEntry.unPinAll();
+        Store.unPinAll();
     }
 
     private void downloadGroupsFromParse() {

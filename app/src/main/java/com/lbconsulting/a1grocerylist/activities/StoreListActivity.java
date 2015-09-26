@@ -136,7 +136,7 @@ public class StoreListActivity extends Activity implements DrawerLayout.DrawerLi
         super.onResume();
         MyLog.i("StoreListActivity", "onResume");
 
-        setActionBarTitle("Store Lists");
+        setActionBarTitle("Stores");
 
         mActiveStoreID = MySettings.getActiveStoreID();
         // create and set pager adapter
@@ -312,6 +312,10 @@ public class StoreListActivity extends Activity implements DrawerLayout.DrawerLi
 
             case R.id.action_add_items:
                 showFragment(MySettings.FRAG_MASTER_ITEMS_LIST);
+                break;
+
+            case R.id.action_place:
+                Toast.makeText(this, "action_place", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.action_deselect_all_items:

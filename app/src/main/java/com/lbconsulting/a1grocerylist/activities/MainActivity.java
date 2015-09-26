@@ -54,8 +54,6 @@ import com.parse.ParseCloud;
 import com.parse.ParseException;
 import com.parse.ParseUser;
 
-import java.text.DateFormat;
-import java.util.Date;
 import java.util.HashMap;
 
 import de.greenrobot.event.EventBus;
@@ -64,8 +62,18 @@ import de.greenrobot.event.EventBus;
 public class MainActivity extends Activity implements DrawerLayout.DrawerListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener,
         LocationListener {
 
-    private final static int LOCATION_REQUEST_INTERVAL = 60000 * 10; // 10 minutes
-    private final static int LOCATION_REQUEST_FASTEST_INTERVAL = 30000; // 30 seconds
+//    private final static int LOCATION_REQUEST_INTERVAL = 60000 * 10; // 10 minutes
+//    private final static int LOCATION_REQUEST_FASTEST_INTERVAL = 30000; // 30 seconds
+
+    private final static int LOCATION_REQUEST_INTERVAL = 1000 * 10; // 10 seconds
+    private final static int LOCATION_REQUEST_FASTEST_INTERVAL = 1000 * 5; // 5 seconds
+    private final static int TWO_MINUTES = 1000 * 60 * 2;
+    private final static float MIN_ACCURACY_METERS = 50;
+    private final static float MIN_ACCURACY_SPEED_METERS_PER_SECOND = 3;
+
+
+    private final static String ARG_REQUESTING_LOCATION_UPDATES = "argRequestingLocationUpdates";
+    private final static String ARG_ACCURATE_LOCATION_FOUND = "argAccurateLocationFound";
 
     private String[] mDrawerItemTitles;
     private DrawerLayout mDrawerLayout;
@@ -88,10 +96,11 @@ public class MainActivity extends Activity implements DrawerLayout.DrawerListene
     private LocationRequest mLocationRequest;
     private boolean mRequestingLocationUpdates = true;
     private boolean mPlayServicesConnected = false;
-    private static boolean mLocationFound = false;
+    private static boolean mAccurateLocationFound = false;
     private Handler mStartSyncHandler = new Handler();
-    private int mSyncAction;
+//    private int mSyncAction;
 
+    private long mRateOfAccuracyChange_metersPerMills;
 
     private static void showOkDialog(Context context, String title, String message) {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(context);
@@ -123,6 +132,9 @@ public class MainActivity extends Activity implements DrawerLayout.DrawerListene
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        updateValuesFromBundle(savedInstanceState);
+
         MyLog.i("MainActivity", "onCreate");
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_main);
@@ -159,6 +171,21 @@ public class MainActivity extends Activity implements DrawerLayout.DrawerListene
         createLocationRequest();
     }
 
+    private void updateValuesFromBundle(Bundle savedInstanceState) {
+
+        if (savedInstanceState != null) {
+            if (savedInstanceState.keySet().contains(ARG_REQUESTING_LOCATION_UPDATES)) {
+                mRequestingLocationUpdates = savedInstanceState.getBoolean(
+                        ARG_REQUESTING_LOCATION_UPDATES);
+            }
+            if (savedInstanceState.keySet().contains(ARG_ACCURATE_LOCATION_FOUND)) {
+                mAccurateLocationFound = savedInstanceState.getBoolean(
+                        ARG_ACCURATE_LOCATION_FOUND);
+            }
+
+        }
+    }
+
 
     protected synchronized void buildGoogleApiClient() {
         mGoogleApiClient = new GoogleApiClient.Builder(this)
@@ -192,12 +219,15 @@ public class MainActivity extends Activity implements DrawerLayout.DrawerListene
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         MyLog.i("MainActivity", "onSaveInstanceState");
+        outState.putBoolean(ARG_REQUESTING_LOCATION_UPDATES, mRequestingLocationUpdates);
+        outState.putBoolean(ARG_ACCURATE_LOCATION_FOUND, mAccurateLocationFound);
     }
 
     @Override
     protected void onRestoreInstanceState(Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
         MyLog.i("MainActivity", "onRestoreInstanceState");
+        updateValuesFromBundle(savedInstanceState);
     }
     //endregion
 
@@ -220,7 +250,7 @@ public class MainActivity extends Activity implements DrawerLayout.DrawerListene
     protected void onStop() {
         MyLog.i("MainActivity", "onStop");
         mGoogleApiClient.disconnect();
-        mLocationFound = false;
+        mAccurateLocationFound = false;
         super.onStop();
     }
 
@@ -466,8 +496,8 @@ public class MainActivity extends Activity implements DrawerLayout.DrawerListene
 
     private void syncA1GroceryListData(int syncAction) {
         if (A1Utils.isNetworkAvailable(this)) {
-            mSyncAction = syncAction;
-            mStartSyncHandler.postDelayed(waitForLocationFound, 10);
+            proceedSyncA1GroceryListData(syncAction);
+            syncA1StoresData();
         } else {
             String title = "Unable to Sync Data";
             String msg = "Internet network is not available. Please select \"Refresh\" after a network becomes available.";
@@ -475,22 +505,32 @@ public class MainActivity extends Activity implements DrawerLayout.DrawerListene
         }
     }
 
-    private Runnable waitForLocationFound = new Runnable() {
+    private void syncA1StoresData() {
+        if (A1Utils.isNetworkAvailable(this)) {
+            mStartSyncHandler.postDelayed(waitForAccurateLocationFound, 10);
+        } else {
+            String title = "Unable to Sync Stores Data";
+            String msg = "Internet network is not available. Please select \"Refresh\" after a network becomes available.";
+            showOkDialog(this, title, msg);
+        }
+    }
+
+    private Runnable waitForAccurateLocationFound = new Runnable() {
         @Override
         public void run() {
-            if (mLocationFound) {
-                proceedSyncA1GroceryListData();
+            if (mAccurateLocationFound) {
+                proceedSyncA1GroceryListData(MySettings.ACTION_DOWNLOAD_STORES);
             } else {
                 mStartSyncHandler.postDelayed(this, 100);
             }
         }
     };
 
-    private void proceedSyncA1GroceryListData() {
-        MyLog.i("MainActivity", "Location found. Proceeding to Sync A1GroceryList Data");
+    private void proceedSyncA1GroceryListData(int syncAction) {
+        MyLog.i("MainActivity", "Proceeding to Sync A1GroceryList Data; SyncAction = " + syncAction);
         Location location = MySettings.getLastLocation();
         mSycIntent = new Intent(this, SyncParseIntentService.class);
-        mSycIntent.putExtra(MySettings.ARG_UPLOAD_DOWNLOAD_ACTION, mSyncAction);
+        mSycIntent.putExtra(MySettings.ARG_UPLOAD_DOWNLOAD_ACTION, syncAction);
         mSycIntent.putExtra(MySettings.ARG_USER_LATITUDE, location.getLatitude());
         mSycIntent.putExtra(MySettings.ARG_USER_LONGITUDE, location.getLongitude());
         startService(mSycIntent);
@@ -608,6 +648,9 @@ public class MainActivity extends Activity implements DrawerLayout.DrawerListene
 
             // NOT shown in Edit/New store or if isMappingStore
             case R.id.action_refresh:
+                if (mAccurateLocationFound) {
+                    startLocationUpdates();
+                }
                 syncA1GroceryListData(MySettings.ACTION_UPLOAD_AND_DOWNLOAD);
 //                Toast.makeText(this, "action_refresh", Toast.LENGTH_SHORT).show();
                 break;
@@ -685,10 +728,10 @@ public class MainActivity extends Activity implements DrawerLayout.DrawerListene
         MyLog.i("MainActivity", "Google Play Services onConnected.");
         mPlayServicesConnected = true;
 
-        Location lastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
-        if (lastLocation != null) {
-            MySettings.setLastLocation(lastLocation);
-        }
+//        Location lastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
+//        if (lastLocation != null) {
+//            MySettings.setLastLocation(lastLocation);
+//        }
 
         if (mRequestingLocationUpdates) {
             startLocationUpdates();
@@ -700,15 +743,53 @@ public class MainActivity extends Activity implements DrawerLayout.DrawerListene
         if (mPlayServicesConnected) {
             LocationServices.FusedLocationApi.requestLocationUpdates(
                     mGoogleApiClient, mLocationRequest, this);
+            mRequestingLocationUpdates = true;
+            mAccurateLocationFound = false;
+        }
+    }
+
+    protected void stopLocationUpdates() {
+        if (mPlayServicesConnected) {
+            LocationServices.FusedLocationApi.removeLocationUpdates(
+                    mGoogleApiClient, this);
+            mRequestingLocationUpdates = false;
         }
     }
 
     @Override
     public void onLocationChanged(Location location) {
-        mLocationFound = true;
-        MySettings.setLastLocation(location);
-        String lastUpdateTime = DateFormat.getTimeInstance().format(new Date());
-        MyLog.i("MainActivity", "onLocationChanged: time = " + lastUpdateTime);
+        Location lastLocation = MySettings.getLastLocation();
+        if (lastLocation.getLatitude() != MySettings.LATITUDE_NA) {
+            if (isBetterLocation(location, lastLocation)) {
+                MySettings.setLastLocation(location);
+                MyLog.i("MainActivity", "Better device location found. Accuracy: "
+                        + location.getAccuracy() + " meters. Speed: "
+                        + location.getSpeed() + " meters/second. Rate: "
+                        + mRateOfAccuracyChange_metersPerMills + " meters/mills.");
+                if (isAccurateLocation(location)) {
+                    mAccurateLocationFound = true;
+                    stopLocationUpdates();
+                    MyLog.i("MainActivity", "Found accurate location. Stopping location updates.");
+                }
+            }
+        } else {
+            MySettings.setLastLocation(location);
+            MyLog.i("MainActivity", "onLocationChanged. However, last device location is not available");
+        }
+
+    }
+
+
+    private boolean isAccurateLocation(Location location) {
+        boolean isAccurate = false;
+
+        if (location.getAccuracy() < MIN_ACCURACY_METERS) {
+            if (location.getSpeed() < MIN_ACCURACY_SPEED_METERS_PER_SECOND) {
+                isAccurate = true;
+            }
+        }
+
+        return isAccurate;
     }
 
     @Override
@@ -745,6 +826,68 @@ public class MainActivity extends Activity implements DrawerLayout.DrawerListene
                 break;
         }
         MyLog.d("MainActivity", "Google Play Services onConnectionFailed: cause = " + errorMessage);
+    }
+
+
+    /**
+     * Determines whether one Location reading is better than the current Location fix
+     *
+     * @param location            The new Location that you want to evaluate
+     * @param currentBestLocation The current Location fix, to which you want to compare the new one
+     */
+    protected boolean isBetterLocation(Location location, Location currentBestLocation) {
+        //Source: http://developer.android.com/guide/topics/location/strategies.html
+        if (currentBestLocation == null) {
+            // A new location is always better than no location
+            return true;
+        }
+
+        // Check whether the new location fix is newer or older
+        long timeDelta = location.getTime() - currentBestLocation.getTime();
+        boolean isSignificantlyNewer = timeDelta > TWO_MINUTES;
+        boolean isSignificantlyOlder = timeDelta < -TWO_MINUTES;
+        boolean isNewer = timeDelta > 0;
+
+        // If it's been more than two minutes since the current location, use the new location
+        // because the user has likely moved
+        if (isSignificantlyNewer) {
+            return true;
+            // If the new location is more than two minutes older, it must be worse
+        } else if (isSignificantlyOlder) {
+            return false;
+        }
+
+        // Check whether the new location fix is more or less accurate
+        long accuracyDelta = (long) (location.getAccuracy() - currentBestLocation.getAccuracy());
+        boolean isLessAccurate = accuracyDelta > 0;
+        boolean isMoreAccurate = accuracyDelta < 0;
+        boolean isSignificantlyLessAccurate = accuracyDelta > 200;
+
+        mRateOfAccuracyChange_metersPerMills = -accuracyDelta / timeDelta;
+
+        // Check if the old and new location are from the same provider
+        boolean isFromSameProvider = isSameProvider(location.getProvider(),
+                currentBestLocation.getProvider());
+
+        // Determine location quality using a combination of timeliness and accuracy
+        if (isMoreAccurate) {
+            return true;
+        } else if (isNewer && !isLessAccurate) {
+            return true;
+        } else if (isNewer && !isSignificantlyLessAccurate && isFromSameProvider) {
+            return true;
+        }
+        return false;
+    }
+
+    /**
+     * Checks whether two providers are the same
+     */
+    private boolean isSameProvider(String provider1, String provider2) {
+        if (provider1 == null) {
+            return provider2 == null;
+        }
+        return provider1.equals(provider2);
     }
     //endregion
 

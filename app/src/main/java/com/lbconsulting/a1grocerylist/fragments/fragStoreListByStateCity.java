@@ -29,7 +29,6 @@ public class fragStoreListByStateCity extends Fragment implements LoaderManager.
 
     // TODO: pin checked stores and related store maps
     private static final String STORE_LIST_TITLE = "All Stores by: State/City/Name";
-    private ListView lvStores;
     private StoreListByStateCityArrayAdapter mAdapter;
 
     // ItemsByGroupLoader
@@ -70,7 +69,7 @@ public class fragStoreListByStateCity extends Fragment implements LoaderManager.
         MyLog.i("fragStoreListByStateCity", "onCreateView: ");
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.frag_store_list_by_group, container, false);
-        lvStores = (ListView) rootView.findViewById(R.id.lvStoreItems);
+        ListView lvStores = (ListView) rootView.findViewById(R.id.lvStoreItems);
         lvStores.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {

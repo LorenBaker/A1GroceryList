@@ -20,6 +20,13 @@
         android:showAsAction="ifRoom" />
 
     <item
+        android:id="@+id/action_place"
+        android:title="Show store location"
+        android:icon="@drawable/ic_action_place"
+        android:orderInCategory="102"
+        android:showAsAction="ifRoom" />
+
+    <item
         android:id="@+id/action_deselect_all_items"
         android:title="Deselect all items"
         android:orderInCategory="111"

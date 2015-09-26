@@ -22,6 +22,7 @@ public class MySettings {
     public static final int ACTION_DOWNLOAD_ONLY = 2;
     public static final int ACTION_UPLOAD_AND_DOWNLOAD = 3;
     public static final int ACTION_UPLOAD_ONLY = 1;
+    public static final int ACTION_DOWNLOAD_STORES = 4;
 
     public static final int BACKGROUND_COLOR_GENOA = 0;
     public static final int BACKGROUND_COLOR_OPAL = 1;
@@ -36,20 +37,19 @@ public class MySettings {
     public static final int QUERY_LIMIT_LOCATIONS = 50;
     public static final int QUERY_LIMIT_STORE_CHAINS = 500;
     public static final int QUERY_LIMIT_NEAREST_STORES = 5;
-    public static final int QUERY_LIMIT_STORE_MAPS = QUERY_LIMIT_NEAREST_STORES * QUERY_LIMIT_GROUPS;
     public static final int INITIAL_NUMBER_OF_AISLES = 25;
 
     public static final int NOTIFICATION_DOWNLOAD_ID = 33;
+
     public static final int SORT_ALPHABETICAL = 0;
-
-    public static final int SORT_BY_GROUP = 2;
-    public static final int SORT_DATE_UPDATED = 4;
-    public static final int SORT_FAVORITES_FIRST = 3;
-    public static final int SORT_MANUALLY = 5;
     public static final int SORT_REVERSE_ALPHABETICAL = 1;
+    public static final int SORT_BY_GROUP = 2;
+    public static final int SORT_FAVORITES_FIRST = 3;
+    public static final int SORT_DATE_UPDATED = 4;
+    public static final int SORT_MANUALLY = 5;
     public static final int SORT_SELECTED_FIRST = 6;
-    public static final String ARG_UPLOAD_DOWNLOAD_ACTION = "argUploadDownloadAction";
 
+    public static final String ARG_UPLOAD_DOWNLOAD_ACTION = "argUploadDownloadAction";
     public static final String ARG_USER_LATITUDE = "argUserLatitude";
     public static final String ARG_USER_LONGITUDE = "argUserLongitude";
     public static final String ARG_STORE_CHAIN_ID = "argStoreChainID";
@@ -57,35 +57,26 @@ public class MySettings {
     public static final String ARG_SYNC_WITH_PARSE_ON_STARTUP = "argSyncWithParseOnStartup";
     public static final String ARG_STORES_ACTIVITY_ON_BACK_PRESSED = "argStoresActivityOnBackPressed";
     public static final String NOT_AVAILABLE = "N/A";
+    public static final double LATITUDE_NA = 100;
+    public static final double LONGITUDE_NA = 400;
 
-    public static final String SETTING_ACTIVE_FRAGMENT_ID = "activeFragments";
-
-
-    public static final String SETTING_ACTIVE_STORE_ID = "activeStoreID";
-    public static final String SETTING_STORE_ID_TO_MAP = "storeIDtoMap";
-    public static final String SETTING_IS_NEW_STORE = "isNewStoreID";
-    public static final String SETTING_LAST_SYNC_DATE_GROUPS = "lastSyncDateGroups";
-    public static final String SETTING_LAST_SYNC_DATE_ITEMS = "lastSyncDateItems";
-    public static final String SETTING_LAST_SYNC_DATE_LOCATIONS = "lastSyncDateLocations";
-    public static final String SETTING_LAST_SYNC_DATE_STORE_CHAINS = "lastSyncDateStoreChains";
-    public static final String SETTING_LAST_SYNC_DATE_STORE_MAPS = "lastSyncDateStoreMaps";
-    public static final String SETTING_LAST_SYNC_DATE_STORES = "lastSyncDateStores";
-    public static final String SETTING_MASTER_LIST_SORT_ORDER = "masterListSortOrder";
-    public static final String SETTING_SHOPPING_LIST_SORT_ORDER = "shoppingListSortOrder";
-    public static final String SETTING_SHOW_FAVORITES = "showFavorites";
-    public static final String SETTING_STORE_LIST_SORT_ORDER = "storeListSortOrder";
-
-    public static final String SETTING_FRAGMENT_BACKSTACK = "fragmentBackstack";
-    public static final String SETTING_FRAGMENT_BACKSTACK_MAX_SIZE = "fragmentBackstackMaxSize";
+    private static final String SETTING_ACTIVE_FRAGMENT_ID = "activeFragments";
+    private static final String SETTING_ACTIVE_STORE_ID = "activeStoreID";
+    private static final String SETTING_STORE_ID_TO_MAP = "storeIDtoMap";
+    private static final String SETTING_IS_NEW_STORE = "isNewStoreID";
+    private static final String SETTING_MASTER_LIST_SORT_ORDER = "masterListSortOrder";
+    private static final String SETTING_SHOPPING_LIST_SORT_ORDER = "shoppingListSortOrder";
+    private static final String SETTING_SHOW_FAVORITES = "showFavorites";
+    private static final String SETTING_FRAGMENT_BACKSTACK = "fragmentBackstack";
+    private static final String SETTING_FRAGMENT_BACKSTACK_MAX_SIZE = "fragmentBackstackMaxSize";
     private static final int STARTING_BACKSTACK_SIZE = 26;
-
-    public static final String SETTING_LAST_LONGITUDE = "lastLongitude";
-    public static final String SETTING_LAST_LATITUDE = "lastLatitude";
-
-    public static  final double LATITUDE_NA = 100;
-    public static  final double LONGITUDE_NA = 400;
-
+    private static final String SETTING_LAST_LOCATION_LATITUDE = "lastLocationLatitude";
+    private static final String SETTING_LAST_LOCATION_LONGITUDE = "lastLocationLongitude";
+    private static final String SETTING_LAST_LOCATION_TIME = "lastLocationTime";
+    private static final String SETTING_LAST_LOCATION_ACCURACY = "lastLocationAccuracy";
+    private static final String SETTING_LAST_LOCATION_PROVIDER = "lastLocationProvider";
     private static final String A1_GROCERY_LIST_SAVED_STATES = "a1GroceryListSavedStates";
+
     private static Context mContext;
 
     public static void setContext(Context context) {
@@ -105,8 +96,8 @@ public class MySettings {
                 break;
 
             case FRAG_MASTER_ITEMS_LIST:
-            fragmentTag = "FRAG_MASTER_ITEMS_LIST";
-            break;
+                fragmentTag = "FRAG_MASTER_ITEMS_LIST";
+                break;
 
             case FRAG_SHOPPING_LIST_BY_GROUP:
                 fragmentTag = "FRAG_SHOPPING_LIST_BY_GROUP";
@@ -250,16 +241,25 @@ public class MySettings {
 
     //region Last Location
     public static Location getLastLocation() {
-        Location location = null;
+        Location location = new Location("");
         SharedPreferences savedState =
                 mContext.getSharedPreferences(A1_GROCERY_LIST_SAVED_STATES, 0);
-        long latitude = savedState.getLong(SETTING_LAST_LATITUDE, 0);
-        long longitude = savedState.getLong(SETTING_LAST_LONGITUDE, 0);
-// TODO: Use non-valid latitude and longitude defaults
-        if (latitude != 0) {
-            location = new Location("");
+        long latitude = savedState.getLong(SETTING_LAST_LOCATION_LATITUDE, 0);
+        long longitude = savedState.getLong(SETTING_LAST_LOCATION_LONGITUDE, 0);
+
+
+        if (latitude == 0 && longitude == 0) {
+            location.setLatitude(LATITUDE_NA);
+            location.setLongitude(LONGITUDE_NA);
+        } else {
             location.setLatitude(Double.longBitsToDouble(latitude));
             location.setLongitude(Double.longBitsToDouble(longitude));
+            long time = savedState.getLong(SETTING_LAST_LOCATION_TIME, 0);
+            Float accuracy = savedState.getFloat(SETTING_LAST_LOCATION_ACCURACY, 999999999);
+            String provider =savedState.getString(SETTING_LAST_LOCATION_PROVIDER,"");
+            location.setTime(time);
+            location.setAccuracy(accuracy);
+            location.setProvider(provider);
         }
 
         return location;
@@ -270,13 +270,16 @@ public class MySettings {
                 mContext.getSharedPreferences(A1_GROCERY_LIST_SAVED_STATES, 0);
         SharedPreferences.Editor editor = savedState.edit();
         if (location == null) {
-            editor.putLong(SETTING_LAST_LATITUDE, 0);
-            editor.putLong(SETTING_LAST_LONGITUDE, 0);
+            editor.putLong(SETTING_LAST_LOCATION_LATITUDE, 0);
+            editor.putLong(SETTING_LAST_LOCATION_LONGITUDE, 0);
         } else {
             long latitude = Double.doubleToRawLongBits(location.getLatitude());
             long longitude = Double.doubleToRawLongBits(location.getLongitude());
-            editor.putLong(SETTING_LAST_LATITUDE, latitude);
-            editor.putLong(SETTING_LAST_LONGITUDE, longitude);
+            editor.putLong(SETTING_LAST_LOCATION_LATITUDE, latitude);
+            editor.putLong(SETTING_LAST_LOCATION_LONGITUDE, longitude);
+            editor.putLong(SETTING_LAST_LOCATION_TIME, location.getTime());
+            editor.putFloat(SETTING_LAST_LOCATION_ACCURACY, location.getAccuracy());
+            editor.putString(SETTING_LAST_LOCATION_PROVIDER,location.getProvider());
         }
         editor.apply();
     }
@@ -304,12 +307,5 @@ public class MySettings {
         return savedState.getInt(SETTING_FRAGMENT_BACKSTACK_MAX_SIZE, STARTING_BACKSTACK_SIZE);
     }
 
-    public static void setFragmentBackstackMaxSizeOrder(int maxBackstackSize) {
-        SharedPreferences savedState =
-                mContext.getSharedPreferences(A1_GROCERY_LIST_SAVED_STATES, 0);
-        SharedPreferences.Editor editor = savedState.edit();
-        editor.putInt(SETTING_FRAGMENT_BACKSTACK_MAX_SIZE, maxBackstackSize);
-        editor.apply();
-    }
     //endregion
 }

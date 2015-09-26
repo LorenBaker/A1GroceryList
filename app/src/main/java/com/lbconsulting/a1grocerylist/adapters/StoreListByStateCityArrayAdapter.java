@@ -1,6 +1,5 @@
 package com.lbconsulting.a1grocerylist.adapters;
 
-import android.app.Activity;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.view.LayoutInflater;
@@ -21,15 +20,12 @@ import java.util.List;
  */
 public class StoreListByStateCityArrayAdapter extends ArrayAdapter<Store> {
 
-    private final Activity mActivity;
-    private Context mContext;
-    private Store mStore;
+    private final Context mContext;
 
     public StoreListByStateCityArrayAdapter(Context context) {
         super(context, 0);
         this.mContext = context;
-        mActivity = (Activity) context;
-        MyLog.i("ShoppingListByGroupArrayAdapter", "Initialized.");
+        MyLog.i("StoreListByStateCityArrayAdapter", "Initialized.");
     }
 
     public void setData(List<Store> data) {
@@ -44,7 +40,7 @@ public class StoreListByStateCityArrayAdapter extends ArrayAdapter<Store> {
         return getStorePosition(soughtStore.getStoreID());
     }
 
-    public int getStorePosition(String soughtItemID) {
+    private int getStorePosition(String soughtItemID) {
         int position;
         boolean found = false;
 
@@ -67,7 +63,7 @@ public class StoreListByStateCityArrayAdapter extends ArrayAdapter<Store> {
     public View getView(int position, View convertView, ViewGroup parent) {
         StoreViewHolder holder;
         // Get the data item for this position
-        mStore = getItem(position);
+        Store store = getItem(position);
         // Check if an existing view is being reused, otherwise inflate the view
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.row_store_list_by_state_city, parent, false);
@@ -78,8 +74,8 @@ public class StoreListByStateCityArrayAdapter extends ArrayAdapter<Store> {
         }
 
         // Populate the data into the template view using the data object
-        holder.ckBoxStoreName.setText(mStore.getStoreChainAndRegionalName());
-        holder.ckBoxStoreName.setChecked(mStore.isChecked());
+        holder.ckBoxStoreName.setText(store.getStoreChainAndRegionalName());
+        holder.ckBoxStoreName.setChecked(store.isChecked());
 
         if (holder.ckBoxStoreName.isChecked()) {
             setChecked(holder);
@@ -87,66 +83,20 @@ public class StoreListByStateCityArrayAdapter extends ArrayAdapter<Store> {
             setUnChecked(holder);
         }
 
-        String address = mStore.getAddress1();
-        address += System.getProperty("line.separator") + mStore.getCity()
-                + " ," + mStore.getState() + " " + mStore.getZip();
+        String address = store.getAddress1();
+        address += System.getProperty("line.separator") + store.getCity()
+                + " ," + store.getState() + " " + store.getZip();
         holder.tvStoreAddress.setText(address);
 
         if (okToShowStoreStateSeparator(position)) {
-            holder.tvStoreSeparator.setText(mStore.getState());
+            holder.tvStoreSeparator.setText(store.getState());
             holder.tvStoreSeparator.setVisibility(View.VISIBLE);
         } else {
             holder.tvStoreSeparator.setVisibility(View.GONE);
         }
 
         // save the item so it can be retrieved later
-        holder.ckBoxStoreName.setTag(mStore);
-
-//        holder.ckBoxStoreName.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                CheckBox ckBox = (CheckBox) v;
-//                final Store clickedItem = (Store) v.getTag();
-//                if (ckBox.isChecked()) {
-//                    setChecked(ckBox);
-//                } else {
-//                    setUnChecked(ckBox);
-//                }
-//            }
-//        });
-//
-//        holder.tvSelectedItem.setOnLongClickListener(new View.OnLongClickListener() {
-//            @Override
-//            public boolean onLongClick(View v) {
-//                if (mIsMappingStore) {
-//                    return true;
-//                }
-//                Item longClickedItem = (Item) v.getTag();
-//                MyLog.i("ShoppingListByGroupArrayAdapter", "tvSelectedItem OnLongClick: Item " + longClickedItem.getItemName());
-//                EventBus.getDefault().post(new MyEvents.showEditItemDialog(longClickedItem.getItemID()));
-//                return true;
-//            }
-//        });
-//
-//        holder.tvItemsSeparator.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                if (!mIsMappingStore) {
-//                    return;
-//                }
-//                // show locations dialog
-//                Group group = (Group) v.getTag();
-//
-//                if (group != null && mStore != null) {
-//                    FragmentManager fm = mActivity.getFragmentManager();
-//                    dialogGroupLocation dialog = dialogGroupLocation.newInstance(mStore.getStoreID(), group.getGroupID());
-//                    dialog.show(fm, "dialogGroupLocation");
-//                } else {
-//                    MyLog.e("ShoppingListByGroupArrayAdapter", "onClick: tvStoreSeparator store or group is null!");
-//                }
-//
-//            }
-//        });
+        holder.ckBoxStoreName.setTag(store);
 
         // Return the completed view to render on screen
         return convertView;
@@ -183,26 +133,25 @@ public class StoreListByStateCityArrayAdapter extends ArrayAdapter<Store> {
         holder.tvStoreAddress.setTypeface(null, Typeface.ITALIC);
     }
 
-    public void toggleChecked(View view, int position){
+    public void toggleChecked(View view, int position) {
         Store store = getItem(position);
         boolean isChecked = !store.isChecked();
         store.setChecked(isChecked);
         StoreViewHolder holder = new StoreViewHolder(view);
-        if(isChecked){
+        if (isChecked) {
             setChecked(holder);
-        }else{
+        } else {
             setUnChecked(holder);
         }
     }
 }
 
 
-
 class StoreViewHolder {
 
-    public  CheckBox ckBoxStoreName;
-    public  TextView tvStoreAddress;
-    public TextView tvStoreSeparator;
+    public final CheckBox ckBoxStoreName;
+    public final TextView tvStoreAddress;
+    public final TextView tvStoreSeparator;
 
     public StoreViewHolder(View rootView) {
         ckBoxStoreName = (CheckBox) rootView.findViewById(R.id.ckBoxStoreName);

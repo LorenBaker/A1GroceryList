@@ -454,13 +454,8 @@ public class fragMasterItemsList extends Fragment implements View.OnClickListene
                 EventBus.getDefault().post(new MyEvents.showFragment(MySettings.FRAG_CULL_ITEMS));
                 return true;
 
-            case R.id.action_manage_groups:
-                //EventBus.getDefault().post(new MyEvents.showFragment(MySettings.FRAG_ITEMS_BY_GROUP));
-                Toast.makeText(getActivity(), "action_manage_groups", Toast.LENGTH_SHORT).show();
-                return true;
-
-            case R.id.action_manage_item_location:
-                Toast.makeText(getActivity(), "action_manage_item_location", Toast.LENGTH_SHORT).show();
+            case R.id.action_refresh:
+                // Handled by MainActivity
                 return true;
 
             case R.id.action_scan_barcodes:

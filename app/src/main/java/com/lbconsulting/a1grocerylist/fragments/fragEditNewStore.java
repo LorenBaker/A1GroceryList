@@ -369,9 +369,15 @@ public class fragEditNewStore extends Fragment implements View.OnClickListener {
                 if (A1Utils.isNetworkAvailable(getActivity())) {
                     // TODO: check if a location has been found ... if not, wait
                     android.location.Location location = MySettings.getLastLocation();
-                    String latitude = String.valueOf(location.getLatitude());
-                    String longitude = String.valueOf(location.getLongitude());
-                    getAddress(latitude, longitude);
+                    if (location.getLatitude() != MySettings.LATITUDE_NA) {
+                        String latitude = String.valueOf(location.getLatitude());
+                        String longitude = String.valueOf(location.getLongitude());
+                        getAddress(latitude, longitude);
+                    } else {
+                        String title = "Unable TO Get Device Location";
+                        String msg = "The device's last location is not available.";
+                        EventBus.getDefault().post(new MyEvents.showOkDialog(title, msg));
+                    }
                 } else {
                     String title = "Unable TO Get Device Location";
                     String msg = "Network is not available.";
