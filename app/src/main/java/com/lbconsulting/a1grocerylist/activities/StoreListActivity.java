@@ -9,6 +9,7 @@ import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
@@ -28,6 +29,7 @@ import com.lbconsulting.a1grocerylist.classes.MyEvents;
 import com.lbconsulting.a1grocerylist.classes.MyLog;
 import com.lbconsulting.a1grocerylist.classes.MySettings;
 import com.lbconsulting.a1grocerylist.database.Item;
+import com.lbconsulting.a1grocerylist.database.Store;
 import com.lbconsulting.a1grocerylist.dialogs.dialogEditItem;
 import com.parse.ParseUser;
 
@@ -315,7 +317,32 @@ public class StoreListActivity extends Activity implements DrawerLayout.DrawerLi
                 break;
 
             case R.id.action_place:
-                Toast.makeText(this, "action_place", Toast.LENGTH_SHORT).show();
+
+                Store store = Store.getStore(mActiveStoreID);
+                Double latitude = store.getStoreLatitude();
+                Double longitude = store.getStoreLongitude();
+                String storeName = store.getStoreChainAndRegionalName();
+                storeName = storeName.replace(" ", "+");
+
+                //geo:0,0?q=latitude,longitude(label)
+                String gmmUri = "geo:" + String.valueOf(latitude) + "," + String.valueOf(longitude);
+//                String gmmUri = "geo:" + String.valueOf(latitude) + "," + String.valueOf(longitude)
+//                        + "?q=" + String.valueOf(latitude) + "," + String.valueOf(longitude) +" (" + storeName + ")";
+//                String gmmUri = "geo:"+ String.valueOf(latitude)+","+String.valueOf(longitude)+"?q=("+storeName + ")";
+
+                // Display a label at the location of Google's Sydney office
+//                Uri gmmIntentUri = Uri.parse("geo:0,0?q=-33.8666,151.1957(Google+Sydney)");
+                Uri gmmIntentUri = Uri.parse(gmmUri);
+                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                mapIntent.setPackage("com.google.android.apps.maps");
+                if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(mapIntent);
+                } else {
+                    String title = "Unable to show location";
+                    String msg = "Google maps not available on this device.";
+                    EventBus.getDefault().post(new MyEvents.showOkDialog(title, msg));
+                }
+//                Toast.makeText(this, "action_place", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.action_deselect_all_items:

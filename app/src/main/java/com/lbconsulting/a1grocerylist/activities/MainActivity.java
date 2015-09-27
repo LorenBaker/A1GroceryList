@@ -68,7 +68,7 @@ public class MainActivity extends Activity implements DrawerLayout.DrawerListene
     private final static int LOCATION_REQUEST_INTERVAL = 1000 * 10; // 10 seconds
     private final static int LOCATION_REQUEST_FASTEST_INTERVAL = 1000 * 5; // 5 seconds
     private final static int TWO_MINUTES = 1000 * 60 * 2;
-    private final static float MIN_ACCURACY_METERS = 50;
+    private final static float MIN_ACCURACY_METERS = 75;
     private final static float MIN_ACCURACY_SPEED_METERS_PER_SECOND = 3;
 
 
