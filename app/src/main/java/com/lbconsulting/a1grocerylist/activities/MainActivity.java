@@ -278,6 +278,16 @@ public class MainActivity extends Activity implements DrawerLayout.DrawerListene
         }
     }
 
+    private void syncA1GroceryListData(int syncAction) {
+        if (A1Utils.isNetworkAvailable(this)) {
+            proceedSyncA1GroceryListData(syncAction);
+            syncA1StoresData();
+        } else {
+            String title = "Unable to Sync Data";
+            String msg = "Internet network is not available. Please select \"Refresh\" after a network becomes available.";
+            showOkDialog(this, title, msg);
+        }
+    }
 
     @Override
     protected void onPause() {
@@ -494,16 +504,7 @@ public class MainActivity extends Activity implements DrawerLayout.DrawerListene
         showOkDialog(this, title, msg);
     }
 
-    private void syncA1GroceryListData(int syncAction) {
-        if (A1Utils.isNetworkAvailable(this)) {
-            proceedSyncA1GroceryListData(syncAction);
-            syncA1StoresData();
-        } else {
-            String title = "Unable to Sync Data";
-            String msg = "Internet network is not available. Please select \"Refresh\" after a network becomes available.";
-            showOkDialog(this, title, msg);
-        }
-    }
+
 
     private void syncA1StoresData() {
         if (A1Utils.isNetworkAvailable(this)) {

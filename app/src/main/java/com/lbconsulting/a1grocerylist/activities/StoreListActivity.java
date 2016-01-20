@@ -317,32 +317,33 @@ public class StoreListActivity extends Activity implements DrawerLayout.DrawerLi
                 break;
 
             case R.id.action_place:
-
                 Store store = Store.getStore(mActiveStoreID);
-                Double latitude = store.getStoreLatitude();
-                Double longitude = store.getStoreLongitude();
-                String storeName = store.getStoreChainAndRegionalName();
-                storeName = storeName.replace(" ", "+");
+                if (store != null) {
+                    Double latitude = store.getStoreLatitude();
+                    Double longitude = store.getStoreLongitude();
 
-                //geo:0,0?q=latitude,longitude(label)
-                String gmmUri = "geo:" + String.valueOf(latitude) + "," + String.valueOf(longitude);
-//                String gmmUri = "geo:" + String.valueOf(latitude) + "," + String.valueOf(longitude)
-//                        + "?q=" + String.valueOf(latitude) + "," + String.valueOf(longitude) +" (" + storeName + ")";
-//                String gmmUri = "geo:"+ String.valueOf(latitude)+","+String.valueOf(longitude)+"?q=("+storeName + ")";
+                    String storeChainName = store.getStoreChain().getStoreChainName();
+                    storeChainName = storeChainName.replace(" ", "+");
+                    if(storeChainName.equalsIgnoreCase("QFC")){
+                        storeChainName = "Quality Food Center";
+                    }
 
-                // Display a label at the location of Google's Sydney office
-//                Uri gmmIntentUri = Uri.parse("geo:0,0?q=-33.8666,151.1957(Google+Sydney)");
-                Uri gmmIntentUri = Uri.parse(gmmUri);
-                Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
-                mapIntent.setPackage("com.google.android.apps.maps");
-                if (mapIntent.resolveActivity(getPackageManager()) != null) {
-                    startActivity(mapIntent);
+                    String gmmUri = "geo:" + String.valueOf(latitude) + "," + String.valueOf(longitude) + "?q=" + storeChainName;
+                    Uri gmmIntentUri = Uri.parse(gmmUri);
+                    Intent mapIntent = new Intent(Intent.ACTION_VIEW, gmmIntentUri);
+                    mapIntent.setPackage("com.google.android.apps.maps");
+                    if (mapIntent.resolveActivity(getPackageManager()) != null) {
+                        startActivity(mapIntent);
+                    } else {
+                        String title = "Unable to show location";
+                        String msg = "Google maps not available on this device.";
+                        EventBus.getDefault().post(new MyEvents.showOkDialog(title, msg));
+                    }
                 } else {
-                    String title = "Unable to show location";
-                    String msg = "Google maps not available on this device.";
+                    String title = "Store Not Found";
+                    String msg = "Store with ID = " + mActiveStoreID + " not found!";
                     EventBus.getDefault().post(new MyEvents.showOkDialog(title, msg));
                 }
-//                Toast.makeText(this, "action_place", Toast.LENGTH_SHORT).show();
                 break;
 
             case R.id.action_deselect_all_items:
